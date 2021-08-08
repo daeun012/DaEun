@@ -1,0 +1,148 @@
+@import './assets/css/variables.scss';
+@import './assets/css//detail.scss';
+
+@font-face {
+  font-family: 'Spoqa Han Sans';
+  font-weight: 700;
+  src: local('Spoqa Han Sans Bold'), url('https://cdn.jsdelivr.net/gh/spoqa/spoqa-han-sans@01ff0283e4f36e159ffbf744b36e16ef742da6d8/Subset/SpoqaHanSans/SpoqaHanSansBold.woff2') format('woff2'),
+    url('https://cdn.jsdelivr.net/gh/spoqa/spoqa-han-sans@01ff0283e4f36e159ffbf744b36e16ef742da6d8/Subset/SpoqaHanSans/SpoqaHanSansBold.woff') format('woff'),
+    url('https://cdn.jsdelivr.net/gh/spoqa/spoqa-han-sans@01ff0283e4f36e159ffbf744b36e16ef742da6d8/Subset/SpoqaHanSans/SpoqaHanSansBold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Spoqa Han Sans';
+  font-weight: 400;
+  src: local('Spoqa Han Sans Regular'), url('https://cdn.jsdelivr.net/gh/spoqa/spoqa-han-sans@01ff0283e4f36e159ffbf744b36e16ef742da6d8/Subset/SpoqaHanSans/SpoqaHanSansRegular.woff2') format('woff2'),
+    url('https://cdn.jsdelivr.net/gh/spoqa/spoqa-han-sans@01ff0283e4f36e159ffbf744b36e16ef742da6d8/Subset/SpoqaHanSans/SpoqaHanSansRegular.woff') format('woff'),
+    url('https://cdn.jsdelivr.net/gh/spoqa/spoqa-han-sans@01ff0283e4f36e159ffbf744b36e16ef742da6d8/Subset/SpoqaHanSans/SpoqaHanSansRegular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Spoqa Han Sans';
+  font-weight: 300;
+  src: local('Spoqa Han Sans Light'), url('https://cdn.jsdelivr.net/gh/spoqa/spoqa-han-sans@01ff0283e4f36e159ffbf744b36e16ef742da6d8/Subset/SpoqaHanSans/SpoqaHanSansLight.woff2') format('woff2'),
+    url('https://cdn.jsdelivr.net/gh/spoqa/spoqa-han-sans@01ff0283e4f36e159ffbf744b36e16ef742da6d8/Subset/SpoqaHanSans/SpoqaHanSansLight.woff') format('woff'),
+    url('https://cdn.jsdelivr.net/gh/spoqa/spoqa-han-sans@01ff0283e4f36e159ffbf744b36e16ef742da6d8/Subset/SpoqaHanSans/SpoqaHanSansLight.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Spoqa Han Sans';
+  font-weight: 100;
+  src: local('Spoqa Han Sans Thin'), url('https://cdn.jsdelivr.net/gh/spoqa/spoqa-han-sans@01ff0283e4f36e159ffbf744b36e16ef742da6d8/Subset/SpoqaHanSans/SpoqaHanSansThin.woff2') format('woff2'),
+    url('https://cdn.jsdelivr.net/gh/spoqa/spoqa-han-sans@01ff0283e4f36e159ffbf744b36e16ef742da6d8/Subset/SpoqaHanSans/SpoqaHanSansThin.woff') format('woff'),
+    url('https://cdn.jsdelivr.net/gh/spoqa/spoqa-han-sans@01ff0283e4f36e159ffbf744b36e16ef742da6d8/Subset/SpoqaHanSans/SpoqaHanSansThin.ttf') format('truetype');
+}
+html {
+  font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif';
+  font-size: 16px;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+div {
+  box-sizing: border-box;
+  -webkit-overflow-scrolling: touch;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.frame {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  border: 12px solid $nd04;
+}
+.fixed-container {
+  position: relative;
+  z-index: 1;
+}
+.layout-container {
+  width: 100%;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+.main-container {
+  padding-top: 60px;
+  padding-bottom: 120px;
+}
+
+@media (max-width: 1280px) {
+  .layout-container {
+    max-width: 768px;
+  }
+}
+
+.page {
+  position: absolute;
+  left: 15px;
+  right: 15px;
+  transition: all 0.6s;
+}
+
+.page-enter {
+  opacity: 0;
+  transform: translateY(-40px);
+  transition: all 0.6s;
+}
+
+.page-enter-active {
+  transition: all 0.6s ease;
+}
+
+.page-exit {
+  transition: all 0.6s ease;
+}
+.page-exit-active {
+  opacity: 0;
+  transform: translateY(-40px);
+  transition: all 0.6s;
+}
+
+::selection {
+  background-color: $y100bg;
+  color: $primary-color;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+.container-responsive {
+  width: 100%;
+  max-width: 2268px;
+  margin: 0 auto;
+}
+button {
+  &:focus {
+    outline: none;
+  }
+}
+.card-list {
+  width: 100%;
+  padding: 0 4px;
+  @include flex(center, flex-start);
+  flex-wrap: wrap;
+  margin: 32px auto;
+}
+@media (max-width: 2268px) {
+  .container-responsive {
+    max-width: 1900px;
+  }
+}
+@media (max-width: 2000px) {
+  .container-responsive {
+    max-width: 1532px;
+  }
+}
+@media (max-width: 1532px) {
+  .container-responsive {
+    max-width: 1164px;
+  }
+}
+@media (max-width: 1280px) {
+  .container-responsive {
+    max-width: 768px;
+  }
+  .card-list {
+    @include flex(center, space-between);
+    padding: 0 20px;
+  }
+}

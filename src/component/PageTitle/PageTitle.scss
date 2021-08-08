@@ -1,0 +1,20 @@
+@import '../../assets/css/variables.scss';
+
+.container-page-title {
+  padding: 16px 16px;
+  font-size: 32px;
+  font-weight: 900;
+  letter-spacing: -0.6px;
+  color: $b300;
+  .bar {
+    display: inline-block;
+    width: 60px;
+    height: 48px;
+    border-bottom: 4px solid $b300;
+  }
+}
+@media (max-width: 768px) {
+  .container-page-title {
+    padding: 16px 24px;
+  }
+}

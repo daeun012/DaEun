@@ -1,0 +1,71 @@
+@import '../assets/css/variables.scss';
+
+.container-about {
+  width: 100%;
+  max-width: 768px;
+  min-height: calc(100vh - 120px);
+  margin: 0 auto 60px;
+  font-size: 16px;
+  .body {
+    word-break: keep-all;
+    padding: 0 16px;
+    font-size: 18px;
+    margin-top: 24px;
+    line-height: 1.8;
+    .abilities {
+      @include flex(flex-start, space-between);
+      flex-wrap: wrap;
+    }
+    .links {
+      margin: 24px 0;
+      a {
+        font-size: 14px;
+        font-weight: 400;
+        color: $nd40;
+        margin-right: 12px;
+        text-decoration: underline;
+        &:visited {
+          color: $nd40;
+        }
+      }
+      p {
+        font-size: 14px;
+        margin: 0;
+      }
+    }
+    p {
+      margin: 0.6em 0 0.6rem;
+      font-weight: 400;
+      color: $b100;
+      b {
+        font-weight: 700;
+        color: $b200;
+      }
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+      margin: 1.2em 0 0.4em;
+      color: $b300;
+    }
+    .name {
+      margin-bottom: 0;
+      span {
+        font-size: 0.6em;
+        font-weight: 400;
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .container-about {
+    margin: 0 auto;
+    padding: 0px;
+    .body {
+      font-size: 15px;
+      padding: 0 24px;
+    }
+  }
+}
