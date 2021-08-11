@@ -21,23 +21,23 @@ export default function MainRouter(props) {
   return (
     <Router>
       <Nav />
-      <div className="frame" />
+      <div className="frame" />{' '}
       <div className="fixed-container">
-        <div className="layout-container">
-          <div className="main-container">
-            {routes.map(({ path, Component }) => (
-              <Route key={path} exact path={path}>
-                {({ match }) => (
-                  <CSSTransition in={match != null} timeout={300} classNames="page" unmountOnExit enter={true} exit={true}>
-                    <div className="page">
+        {routes.map(({ path, Component }) => (
+          <Route key={path} exact path={path}>
+            {({ match }) => (
+              <CSSTransition in={match != null} timeout={600} classNames="page" unmountOnExit enter={true} exit={true}>
+                <div className="page">
+                  <div className="layout-container">
+                    <div className="main-container">
                       <Component />
                     </div>
-                  </CSSTransition>
-                )}
-              </Route>
-            ))}
-          </div>
-        </div>
+                  </div>
+                </div>
+              </CSSTransition>
+            )}
+          </Route>
+        ))}
       </div>
     </Router>
   );

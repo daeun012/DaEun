@@ -1,10 +1,11 @@
+import classNames from 'classnames';
 import React from 'react';
 import './MenuIcon.scss';
 
-function MenuIcon() {
+const MenuIcon = ({ open, toggleMenu }) => {
   return (
-    <div className="area-ic-menu">
-      <div className="wrapper">
+    <div className={classNames('menuIcon-container', { active: open })} onClick={toggleMenu}>
+      <div className="menuIcon-wrapper">
         <div className="bar top" />
         <div className="bar mid first" />
         <div className="bar mid second" />
@@ -12,6 +13,6 @@ function MenuIcon() {
       </div>
     </div>
   );
-}
+};
 
 export default MenuIcon;

@@ -1,22 +1,23 @@
 @import '../../assets/css/variables.scss';
 
-.ButtonNavLink {
+.buttonNavLink {
   width: 100%;
   max-width: 440px;
-  height: 68px;
-  border-radius: 60px;
-  transition: all 0.3s;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 8px 24px 8px 32px;
+  padding: 5px 24px 5px 32px;
   background-color: $nd04;
+  border-radius: 60px;
   margin: 12px 8px;
-  cursor: pointer;
-  text-decoration: none;
-  &.selected {
-    transform: scale(1.05) translateY(-4px);
+  transition: all 0.3s;
+
+  .link-wrapper {
+    transition: all 0.3s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
   }
+
   &:hover {
     transform: scale(1.05) translateY(-4px);
   }
@@ -32,7 +33,7 @@
     height: 48px;
     border-bottom: 4px solid $b300;
   }
-  .wrapper-arrow {
+  .arrow-wrapper {
     width: 40px;
     height: 40px;
     border: 1px solid $primary-color;
@@ -43,7 +44,7 @@
   }
 }
 @media (max-width: 1280px) {
-  .ButtonNavLink {
+  .buttonNavLink {
     max-width: 100%;
   }
 }

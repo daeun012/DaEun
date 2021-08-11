@@ -17,6 +17,7 @@ function Home() {
       <div className="buttonNav">
         <ButtonNavLink name="About" />
         <ButtonNavLink name="Project" />
+        <ButtonNavLink name="Study" />
         <ButtonNavLink name="Blog" />
       </div>
     </section>
