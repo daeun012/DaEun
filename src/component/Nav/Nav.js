@@ -25,7 +25,7 @@ const Nav = () => {
             <NavLink className="menu-item" to="/project" activeClassName="selected">
               Project _
             </NavLink>
-            <NavLink className="menu-item" to="/project" activeClassName="selected">
+            <NavLink className="menu-item" to="/study" activeClassName="selected">
               Study _
             </NavLink>
             <a className="menu-item" target="_blank" href="https://daeun012.github.io/" rel="noreferrer">

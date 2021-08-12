@@ -5,6 +5,7 @@ import Nav from './component/Nav/Nav';
 import Home from './routes/Home';
 import About from './routes/About';
 import Project from './routes/Project/index';
+import Study from './routes/Study';
 import FunBun from './routes/Project/FunBun';
 import Humechanic from './routes/Project/Humechanic';
 
@@ -12,6 +13,7 @@ const routes = [
   { path: '/', name: 'Home', Component: Home },
   { path: '/about', name: 'About', Component: About },
   { path: '/project', name: 'Project', Component: Project },
+  { path: '/study', name: 'Study', Component: Study },
   { path: '/project/FunBun', name: 'FunBun', Component: FunBun },
   { path: '/project/Humechanic', name: 'Humechanic', Component: Humechanic },
 ];
@@ -21,7 +23,7 @@ export default function MainRouter(props) {
   return (
     <Router>
       <Nav />
-      <div className="frame" />{' '}
+      <div className="frame" />
       <div className="fixed-container">
         {routes.map(({ path, Component }) => (
           <Route key={path} exact path={path}>

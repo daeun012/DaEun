@@ -9,7 +9,7 @@ const ButtonNavLink = ({ name }) => (
         <div className="title">
           {name} <div className="bar" />
         </div>
-        <div className="wrapper-arrow">
+        <div className="arrow-wrapper">
           <img src="/images/link_arrow.svg" alt={name} />
         </div>{' '}
       </a>
