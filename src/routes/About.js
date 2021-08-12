@@ -24,9 +24,12 @@ function About() {
         </p>
         <div className="links">
           <p>kdw971203@naver.com</p>
-          <a href="https://github.com/daeun012" target="blank">
-            Github
-          </a>
+          <p>
+            Github :{' '}
+            <a href="https://github.com/daeun012" target="blank">
+              https://github.com/daeun012
+            </a>
+          </p>
         </div>
         <div className="abilities">
           <div className="skill">

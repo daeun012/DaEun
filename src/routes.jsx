@@ -8,6 +8,7 @@ import Project from './routes/Project/index';
 import Study from './routes/Study';
 import FunBun from './routes/Project/FunBun';
 import Humechanic from './routes/Project/Humechanic';
+import Portfolio from './routes/Project/Portfolio';
 
 const routes = [
   { path: '/', name: 'Home', Component: Home },
@@ -16,6 +17,7 @@ const routes = [
   { path: '/study', name: 'Study', Component: Study },
   { path: '/project/FunBun', name: 'FunBun', Component: FunBun },
   { path: '/project/Humechanic', name: 'Humechanic', Component: Humechanic },
+  { path: '/project/Portfolio', name: 'Portfolio', Component: Portfolio },
 ];
 
 export default function MainRouter(props) {
