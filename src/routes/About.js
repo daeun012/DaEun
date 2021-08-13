@@ -35,35 +35,35 @@ const About = () => (
         <div className="skill">
           <h3>Front-end</h3>
           <div className="img">
-            <img src="images/web.png" alt="html" height="100" width="250" />
-            <img src="images/react.png" alt="react" width="90" />
-            <img src="images/redux.png" alt="redux" width="100" />
+            <img src="./images/web.png" alt="html" height="100" width="250" />
+            <img src="./images/react.png" alt="react" width="90" />
+            <img src="./images/redux.png" alt="redux" width="100" />
           </div>
         </div>
         <div className="skill">
           <h3>Back-end</h3>
           <div className="img">
-            <img src="images/nodejs.png" alt="node.js" height="100" width="100" /> <img src="images/express.png" height="100" alt="express.js" width="150" />
+            <img src="./images/nodejs.png" alt="node.js" height="100" width="100" /> <img src="./images/express.png" height="100" alt="express.js" width="150" />
           </div>
         </div>
         <div className="skill">
           <h3>Database</h3>
           <div className="img">
-            <img src="images/mysql.png" alt="mysql" height="100" width="100" style={{ marginRight: 25 }} />
-            <img src="images/mongodb.png" alt="mongoDB" height="100" width="100" />
+            <img src="./images/mysql.png" alt="mysql" height="100" width="100" style={{ marginRight: 25 }} />
+            <img src="./images/mongodb.png" alt="mongoDB" height="100" width="100" />
           </div>
         </div>
         <div className="skill">
           <h3>Etc</h3>
           <div className="img">
-            <img src="images/git.png" alt="git" height="100" width="100" />
-            <img src="images/github.png" alt="github" height="100" width="100" />
+            <img src="./images/git.png" alt="git" height="100" width="100" />
+            <img src="./images/github.png" alt="github" height="100" width="100" />
           </div>
         </div>
         <div className="skill">
           <h3>Certificate</h3>
           <div className="img">
-            <img src="images/certificate.jpg" alt="certificate" height="120" width="180" />
+            <img src="./images/certificate.jpg" alt="certificate" height="120" width="180" />
           </div>
         </div>
       </div>

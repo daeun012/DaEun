@@ -11,37 +11,37 @@ const Study = () => (
         <a href="https://github.com/daeun012/MemoApp" target="_blank" rel="noreferrer">
           <div className="title"> MemoApp</div>
           <div className="arrow-wrapper">
-            <img src="../assets/images/link_arrow2.svg" alt="MemoApp" />
+            <img src="./images/link_arrow2.svg" alt="MemoApp" />
           </div>
         </a>
         <a href="https://powerdev.tistory.com/">
           <div className="title">정보처리기사 정리</div>
           <div className="arrow-wrapper">
-            <img src="../assets/images/link_arrow2.svg" alt="정보처리기사 정리" />
+            <img src="./images/link_arrow2.svg" alt="정보처리기사 정리" />
           </div>
         </a>
         <a href="https://github.com/daeun012/react-study" target="_blank" rel="noreferrer">
           <div className="title">React</div>
           <div className="arrow-wrapper">
-            <img src="../assets/images/link_arrow2.svg" alt="React" />
+            <img src="./images/link_arrow2.svg" alt="React" />
           </div>
         </a>
         <a href="https://github.com/daeun012/javascript-study" target="_blank" rel="noreferrer">
           <div className="title">Javascript</div>
           <div className="arrow-wrapper">
-            <img src="../assets/images/link_arrow2.svg" alt="Javascript" />
+            <img src="./images/link_arrow2.svg" alt="Javascript" />
           </div>
         </a>
         <a href="https://github.com/daeun012/nodejs-study" target="_blank" rel="noreferrer">
           <div className="title">NodeJS</div>
           <div className="arrow-wrapper">
-            <img src="../assets/images/link_arrow2.svg" alt="NodeJS" />
+            <img src="./images/link_arrow2.svg" alt="NodeJS" />
           </div>
         </a>
         <a href="https://github.com/daeun012/css-study" target="_blank" rel="noreferrer">
           <div className="title">CSS</div>
           <div className="arrow-wrapper">
-            <img src="../assets/images/link_arrow2.svg" alt="CSS" />
+            <img src="./images/link_arrow2.svg" alt="CSS" />
           </div>
         </a>
       </div>
