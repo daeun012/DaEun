@@ -9,7 +9,7 @@ function Humechanic() {
       </div>
       <div className="bar"></div>
       <div className="body">
-        <img src="/images/humechanic.jpg" alt="Humechanic 로고"></img>
+        <img src="./images/humechanic.jpg" alt="Humechanic 로고"></img>
         <p>
           HTML, CSS, JavaScript 공부를 시작하면서 만든 첫 프로젝트로, <b>학과 내 동아리 홈페이지를 만들어 보았습니다.</b> 기본적인 홈페이지의 기능들을 구현하였습니다.
         </p>
