@@ -10,7 +10,7 @@ import Study from './routes/Study';
 
 const MainRouter = () => {
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <Nav />
       <div className="frame" />
       <Route
