@@ -15,7 +15,7 @@ const Study = () => (
           </div>
         </a>
         <a href="https://powerdev.tistory.com/" target="_blank" rel="noreferrer">
-          <div className="title">정보처리기사 정리</div>
+          <div className="title">정보처리기사</div>
           <div className="arrow-wrapper">
             <img src="./images/link_arrow2.svg" alt="정보처리기사 정리" />
           </div>

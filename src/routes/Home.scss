@@ -3,8 +3,7 @@
 .Home {
   position: relative;
   width: 100%;
-  min-height: calc(100vh - 48px);
-  top: -100px;
+  top: 120px;
   max-width: 1440px;
   margin: 0 auto;
   @include flex(center, center);
@@ -74,7 +73,7 @@
     flex-direction: column;
     @include flex(center, flex-start);
     .home-box-wrapper {
-      margin-top: 16px;
+      margin-top: 40px;
       flex-direction: column;
       .logo-box {
         display: none;
