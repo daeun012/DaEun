@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { BrowserRouter as Router, Route, Switch, useLocation, withRouter } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch, useLocation } from 'react-router-dom';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import Nav from './component/Nav/Nav';
 import Home from './routes/Home';
@@ -25,12 +25,12 @@ const MainRouter = () => {
       <Route
         render={({ location }) => {
           return (
-            <ScrollToTop>
-              <TransitionGroup className="fixed-container">
-                <CSSTransition key={location.key} classNames="fade" timeout={600} unmountOnExit>
-                  <div className="page">
-                    <div className="layout-container">
-                      <div className="main-container">
+            <TransitionGroup className="fixed-container">
+              <CSSTransition key={location.key} classNames="fade" timeout={600} unmountOnExit>
+                <div className="page">
+                  <div className="layout-container">
+                    <div className="main-container">
+                      <ScrollToTop>
                         <Switch location={location}>
                           <Route exact path="/" component={Home}></Route>
                           <Route path="/about" component={About}></Route>
@@ -38,12 +38,12 @@ const MainRouter = () => {
                           <Route path="/project/:title" component={ProjectDetail}></Route>
                           <Route path="/study" component={Study}></Route>
                         </Switch>
-                      </div>
+                      </ScrollToTop>
                     </div>
                   </div>
-                </CSSTransition>
-              </TransitionGroup>
-            </ScrollToTop>
+                </div>
+              </CSSTransition>
+            </TransitionGroup>
           );
         }}
       ></Route>

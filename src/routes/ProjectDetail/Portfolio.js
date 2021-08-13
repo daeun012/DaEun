@@ -9,7 +9,7 @@ function Portfolio() {
       </div>
       <div className="bar"></div>
       <div className="body">
-        <img src="../images/portfolio_main.png" alt="포토폴리오 메인 페이지"></img>
+        <img src="https://daeun012.github.io/DaEun/images/portfolio_main.png" alt="포토폴리오 메인 페이지"></img>
         <p>
           <b>포트폴리오 용도로 제작한 React 기반의 웹사이트</b>입니다. 지금 보고 있는 바로 이 웹사이트에 해당합니다.
         </p>
