@@ -2,7 +2,7 @@ import React from 'react';
 
 function Portfolio() {
   return (
-    <div className="container-detail">
+    <React.Fragment>
       <div className="title">
         Portfolio
         <div className="sub-title">포트폴리오 웹사이트</div>
@@ -29,7 +29,7 @@ function Portfolio() {
           <li>React JS</li>
         </p>
       </div>
-    </div>
+    </React.Fragment>
   );
 }
 

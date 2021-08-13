@@ -2,7 +2,7 @@ import React from 'react';
 
 function FunBun() {
   return (
-    <div className="container-detail">
+    <React.Fragment>
       <div className="title">
         FUN & BUN
         <div className="sub-title">대학생들을 위한 랜덤 매칭 및 그룹 채팅 서비스</div>
@@ -38,7 +38,7 @@ function FunBun() {
           <li>Axios for API requests</li>
         </p>
       </div>
-    </div>
+    </React.Fragment>
   );
 }
 

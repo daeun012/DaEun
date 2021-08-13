@@ -2,7 +2,7 @@ import React from 'react';
 
 function Humechanic() {
   return (
-    <div className="container-detail">
+    <React.Fragment>
       <div className="title">
         Humechanic
         <div className="sub-title">로봇동아리 홈페이지</div>
@@ -32,7 +32,7 @@ function Humechanic() {
           <li>NodeJS (Express)</li>
         </p>
       </div>
-    </div>
+    </React.Fragment>
   );
 }
 
