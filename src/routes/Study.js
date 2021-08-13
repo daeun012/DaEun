@@ -1,14 +1,51 @@
 import React from 'react';
 import PageTitle from '../component/PageTitle/PageTitle';
-import Card from '../component/Card/Card';
+import './Study.scss';
 
 function Study() {
   return (
-    <div class="container-responsive">
+    <div className="container-study">
       <PageTitle title="Study" />
-      <div class="card-list">
-        <Card img="images/funbun.png" title="FUN & BUN" subTitle="react" desc="대학생들을 위한 랜덤 매칭 및 그룹 채팅 서비스" match="FunBun"></Card>
-        <Card img="images/humechanic.jpg" title="Humechanic" subTitle="html, css, javascript" desc="로봇 동아리 홈페이지" match="Humechanic"></Card>
+      <div className="body">
+        <h3>공부한 내용들을 기록하였습니다.</h3>
+        <div className="links">
+          <a href="https://github.com/daeun012/MemoApp" target="_blank" rel="noreferrer">
+            <div className="title"> MemoApp</div>
+            <div className="arrow-wrapper">
+              <img src="/images/link_arrow2.svg" alt="MemoApp" />
+            </div>
+          </a>
+          <a href="https://powerdev.tistory.com/">
+            <div className="title">정보처리기사 정리</div>
+            <div className="arrow-wrapper">
+              <img src="/images/link_arrow2.svg" alt="MemoApp" />
+            </div>
+          </a>
+          <a href="https://github.com/daeun012/react-study" target="_blank" rel="noreferrer">
+            <div className="title">React</div>
+            <div className="arrow-wrapper">
+              <img src="/images/link_arrow2.svg" alt="MemoApp" />
+            </div>
+          </a>
+          <a href="https://github.com/daeun012/javascript-study" target="_blank" rel="noreferrer">
+            <div className="title">Javascript</div>
+            <div className="arrow-wrapper">
+              <img src="/images/link_arrow2.svg" alt="MemoApp" />
+            </div>
+          </a>
+          <a href="https://github.com/daeun012/nodejs-study" target="_blank" rel="noreferrer">
+            <div className="title">NodeJS</div>
+            <div className="arrow-wrapper">
+              <img src="/images/link_arrow2.svg" alt="MemoApp" />
+            </div>
+          </a>
+          <a href="https://github.com/daeun012/css-study" target="_blank" rel="noreferrer">
+            <div className="title">CSS</div>
+            <div className="arrow-wrapper">
+              <img src="/images/link_arrow2.svg" alt="MemoApp" />
+            </div>
+          </a>
+        </div>
       </div>
     </div>
   );

@@ -3,15 +3,15 @@ import { Link } from 'react-router-dom';
 import './Card.scss';
 
 const Card = ({ img, title, subTitle, desc, match }) => (
-  <Link class="card-continer" to={`/project/${match}`}>
-    <div class="image-area">
+  <Link className="card-continer" to={`/project/${match}`}>
+    <div className="image-area">
       <img src={img} alt={title} />
     </div>
-    <div class="title">
+    <div className="title">
       {title}
-      <span class="sub-title">/ {subTitle} </span>
+      <span className="sub-title">/ {subTitle} </span>
     </div>
-    <div class="desc">{desc}</div>
+    <div className="desc">{desc}</div>
   </Link>
 );
 

@@ -6,7 +6,7 @@ function Home() {
   return (
     <section className="Home">
       <div className="home-box-wrapper">
-        <div class="logo-box">
+        <div className="logo-box">
           <div className="title">D</div>
         </div>
         <div className="profile-box">

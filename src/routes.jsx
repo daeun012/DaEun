@@ -21,7 +21,6 @@ const routes = [
 ];
 
 export default function MainRouter(props) {
-  console.log(props.match);
   return (
     <Router>
       <Nav />

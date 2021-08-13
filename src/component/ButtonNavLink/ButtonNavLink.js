@@ -11,7 +11,7 @@ const ButtonNavLink = ({ name }) => (
         </div>
         <div className="arrow-wrapper">
           <img src="/images/link_arrow.svg" alt={name} />
-        </div>{' '}
+        </div>
       </a>
     ) : (
       <Link className="link-wrapper" activeclassname="selected" to={`/${name.toLowerCase()}`}>
