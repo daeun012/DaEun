@@ -13,7 +13,7 @@ function Portfolio() {
         <p>
           <b>포트폴리오 용도로 제작한 React 기반의 웹사이트</b>입니다. 지금 보고 있는 바로 이 웹사이트에 해당합니다.
         </p>
-        <a href="https://github.com/daeun012/Portfolio" target="_blank" rel="noreferrer">
+        <a href="https://github.com/daeun012/DaEun" target="_blank" rel="noreferrer">
           Github 바로가기
         </a>
         <h3>주요기능</h3>
