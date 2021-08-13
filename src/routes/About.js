@@ -22,7 +22,8 @@ const About = () => (
         <b>한순간의 열정이 아닌 꾸준함으로 승부하겠습니다. </b>
       </p>
       <div className="links">
-        <p>kdw971203@naver.com</p>
+        <p>이메일 : kdw971203@naver.com</p>
+        <p>연락처 : 010-4116-5131</p>
         <p>
           Github :{' '}
           <a href="https://github.com/daeun012" target="blank">
