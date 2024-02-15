@@ -1,6 +1,6 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import './Card.scss';
+import React from "react";
+import { Link } from "react-router-dom";
+import "./Card.scss";
 
 const Card = ({ img, title, subTitle, desc, match }) => (
   <Link className="card-continer" to={`/project/${match}`}>
@@ -9,7 +9,7 @@ const Card = ({ img, title, subTitle, desc, match }) => (
     </div>
     <div className="title">
       {title}
-      <span className="sub-title">/ {subTitle} </span>
+      <span className="sub-title"> / {subTitle} </span>
     </div>
     <div className="desc">{desc}</div>
   </Link>

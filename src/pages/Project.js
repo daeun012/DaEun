@@ -3,7 +3,7 @@ import PageTitle from "../components/PageTitle/PageTitle";
 import Card from "../components/Card/Card";
 
 const Project = () => (
-  <div className="container-responsive">
+  <div className="responsive-container">
     <PageTitle title="Project" />
     <div className="card-list">
       <Card

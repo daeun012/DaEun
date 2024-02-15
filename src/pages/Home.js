@@ -15,6 +15,7 @@ const Home = () => (
     </div>
     <div className="buttonNav">
       <ButtonNavLink name="About" />
+      <ButtonNavLink name="Career" />
       <ButtonNavLink name="Project" />
       <ButtonNavLink name="Study" />
       <ButtonNavLink name="Blog" />

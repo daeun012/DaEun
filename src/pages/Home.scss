@@ -68,7 +68,7 @@
 }
 
 @media (max-width: 1280px) {
-  .Home {
+  .home {
     top: 0;
     flex-direction: column;
     @include flex(center, flex-start);
