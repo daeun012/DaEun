@@ -1,12 +1,12 @@
-import React, { useEffect } from 'react';
-import { BrowserRouter as Router, Route, Switch, useLocation } from 'react-router-dom';
-import { CSSTransition, TransitionGroup } from 'react-transition-group';
-import Nav from './component/Nav/Nav';
-import Home from './routes/Home';
-import About from './routes/About';
-import Project from './routes/Project';
-import ProjectDetail from './routes/ProjectDetail';
-import Study from './routes/Study';
+import React, { useEffect } from "react";
+import { BrowserRouter as Router, Route, Switch, useLocation } from "react-router-dom";
+import { CSSTransition, TransitionGroup } from "react-transition-group";
+import Nav from "./component/Nav/Nav";
+import Home from "./routes/Home";
+import About from "./routes/About";
+import Project from "./routes/Project";
+import ProjectDetail from "./routes/ProjectDetail";
+import Study from "./routes/Study";
 
 const ScrollToTop = (props) => {
   const location = useLocation();
