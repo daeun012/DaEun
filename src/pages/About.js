@@ -38,6 +38,9 @@ const About = () => (
             <img src="https://daeun012.github.io/DaEun/images/react.png" alt="react" width="90" />
             <img src="https://daeun012.github.io/DaEun/images/redux.png" alt="redux" width="100" />
             <img src="https://daeun012.github.io/DaEun/images/typescript.png" alt="typescript" width="100" />
+            <img src="https://daeun012.github.io/DaEun/images/openlayers.png" alt="openlayers" width="100" />
+            <img src="https://daeun012.github.io/DaEun/images/ant-design.png" alt="ant-design" width="100" />
+            <img src="https://daeun012.github.io/DaEun/images/bootstrap.png" alt="bootstrap" width="100" />
           </div>
         </div>
         <div className="skill">
