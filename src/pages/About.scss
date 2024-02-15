@@ -1,37 +1,18 @@
-@import '../assets/css/variables.scss';
+@import "../assets/css/variables.scss";
 
-.container-about {
+.about {
   width: 100%;
   max-width: 768px;
   margin: 0 auto;
   font-size: 16px;
+
   .body {
     word-break: keep-all;
     padding: 0 16px;
     font-size: 18px;
     margin-top: 24px;
     line-height: 1.8;
-    .abilities {
-      @include flex(flex-start, space-between);
-      flex-wrap: wrap;
-    }
-    .links {
-      margin: 24px 0;
-      a {
-        font-size: 14px;
-        font-weight: 400;
-        color: $nd40;
-        margin-right: 12px;
-        text-decoration: underline;
-        &:visited {
-          color: $nd40;
-        }
-      }
-      p {
-        font-size: 14px;
-        margin: 0;
-      }
-    }
+
     p {
       margin: 0.6em 0 0.6rem;
       font-weight: 400;
@@ -56,10 +37,50 @@
         font-weight: 400;
       }
     }
+
+    .detail-info {
+      margin: 24px 0;
+      a {
+        font-size: 14px;
+        font-weight: 400;
+        color: $nd40;
+        margin-right: 12px;
+        text-decoration: underline;
+        &:visited {
+          color: $nd40;
+        }
+      }
+      p {
+        font-size: 14px;
+        margin: 0;
+      }
+    }
+
+    .skill-group {
+      @include flex(flex-start, start);
+      flex-wrap: wrap;
+      gap: 15px;
+      .skill {
+        padding: 10px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        border: 1px solid $primary-color;
+        border-radius: 15px;
+        box-shadow: 10px 10px 10px 0 rgba(68, 68, 68, 0.2);
+
+        h3 {
+          color: $primary-color;
+          margin: 0 0 10px;
+          border-bottom: 1px solid $nd04;
+        }
+      }
+    }
   }
 }
+
 @media (max-width: 768px) {
-  .container-about {
+  .about {
     margin: 0 auto;
     padding: 0px;
     .body {
