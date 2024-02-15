@@ -1,12 +1,12 @@
 import React, { useEffect } from "react";
 import { BrowserRouter as Router, Route, Switch, useLocation } from "react-router-dom";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
-import Nav from "./component/Nav/Nav";
-import Home from "./routes/Home";
-import About from "./routes/About";
-import Project from "./routes/Project";
-import ProjectDetail from "./routes/ProjectDetail";
-import Study from "./routes/Study";
+import Header from "./components/Header/Header";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Project from "./pages/Project";
+import ProjectDetail from "./pages/ProjectDetail";
+import Study from "./pages/Study";
 
 const ScrollToTop = (props) => {
   const location = useLocation();
@@ -17,10 +17,10 @@ const ScrollToTop = (props) => {
   return <>{props.children}</>;
 };
 
-const MainRouter = () => {
+const App = () => {
   return (
     <Router basename={process.env.PUBLIC_URL}>
-      <Nav />
+      <Header />
       <div className="frame" />
       <Route
         render={({ location }) => {
@@ -51,4 +51,4 @@ const MainRouter = () => {
   );
 };
 
-export default MainRouter;
+export default App;

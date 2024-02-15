@@ -1,9 +1,9 @@
-import React from 'react';
-import ButtonNavLink from '../component/ButtonNavLink/ButtonNavLink';
-import './Home.scss';
+import React from "react";
+import ButtonNavLink from "../components/ButtonNavLink/ButtonNavLink";
+import "./Home.scss";
 
 const Home = () => (
-  <section className="Home">
+  <section className="home">
     <div className="home-box-wrapper">
       <div className="logo-box">
         <div className="title">D</div>

@@ -1,6 +1,6 @@
-import React from 'react';
-import PageTitle from '../component/PageTitle/PageTitle';
-import './Study.scss';
+import React from "react";
+import PageTitle from "../components/PageTitle/PageTitle";
+import "./Study.scss";
 
 const Study = () => (
   <div className="container-study">

@@ -1,16 +1,16 @@
-import React, { useState } from 'react';
-import { NavLink } from 'react-router-dom';
-import { CSSTransition } from 'react-transition-group';
-import ButtonNavLink from '../ButtonNavLink/ButtonNavLink';
-import MenuIcon from '../MenuIcon/MenuIcon';
-import './Nav.scss';
+import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
+import { CSSTransition } from "react-transition-group";
+import ButtonNavLink from "../ButtonNavLink/ButtonNavLink";
+import MenuIcon from "../MenuIcon/MenuIcon";
+import "./Header.scss";
 
-const Nav = () => {
+const Header = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="nav-container">
-      <div className="nav-wrapper">
+    <div className="header-container">
+      <div className="header-wrapper">
         <div className="items left-side">
           <NavLink className="logo-wrapper" to="/">
             DAEUN
@@ -34,8 +34,8 @@ const Nav = () => {
           </div>
 
           <CSSTransition classNames="mobile-menu" in={open} timeout={300} unmountOnExit>
-            <div className="mobile-menu" onClick={() => setOpen(!open)}>
-              <div className="buttonNav">
+            <div className="mobile-menu-wrapper" onClick={() => setOpen(!open)}>
+              <div className="menu-buttons-group">
                 <ButtonNavLink name="About" />
                 <ButtonNavLink name="Project" />
                 <ButtonNavLink name="Study" />
@@ -49,4 +49,4 @@ const Nav = () => {
   );
 };
 
-export default Nav;
+export default Header;
