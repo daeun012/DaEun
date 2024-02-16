@@ -1,19 +1,21 @@
-import React from 'react';
-import { Route } from 'react-router-dom';
-import FunBun from './FunBun';
-import Humechanic from './Humechanic';
-import Portfolio from './Portfolio';
-import LabelImage from './LabelImage';
+import React from "react";
+import { Route, Routes, useParams } from "react-router-dom";
+import FunBun from "./FunBun";
+import Humechanic from "./Humechanic";
+import Portfolio from "./Portfolio";
+import LabelImage from "./LabelImage";
 
-function ProjectDetail() {
+const ProjectDetail = () => {
   return (
     <div className="container-detail">
-      <Route path="/project/FunBun" component={FunBun} />
-      <Route path="/project/Humechanic" component={Humechanic} />
-      <Route path="/project/Portfolio" component={Portfolio} />
-      <Route path="/project/LabelImage" component={LabelImage} />
+      <Routes>
+        <Route path="FunBun" element={<FunBun />} />
+        <Route path="Humechanic" element={<Humechanic />} />
+        <Route path="Portfolio" element={<Portfolio />} />
+        <Route path="LabelImage" element={<LabelImage />} />
+      </Routes>
     </div>
   );
-}
+};
 
 export default ProjectDetail;

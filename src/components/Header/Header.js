@@ -1,8 +1,9 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { CSSTransition } from "react-transition-group";
 import ButtonNavLink from "../ButtonNavLink/ButtonNavLink";
 import MenuIcon from "../MenuIcon/MenuIcon";
+import cn from "classnames";
 import "./Header.scss";
 
 const Header = () => {
@@ -12,23 +13,23 @@ const Header = () => {
     <div className="header-container">
       <div className="header-wrapper">
         <div className="items left-side">
-          <NavLink className="logo-wrapper" to="/">
+          <Link className="logo-wrapper" to="/">
             DAEUN
-          </NavLink>
+          </Link>
         </div>
         <div className="items right-side">
           <MenuIcon open={open} toggleMenu={() => setOpen(!open)} />
           <div className="menu">
-            <NavLink className="menu-item" to="/about" activeClassName="selected">
+            <NavLink className={({ isActive }) => cn("menu-item", isActive && "selected")} to="/about" end>
               About _
             </NavLink>
-            <NavLink className="menu-item" to="/career" activeClassName="selected">
+            <NavLink className={({ isActive }) => cn("menu-item", isActive && "selected")} to="/career" end>
               Career _
             </NavLink>
-            <NavLink className="menu-item" to="/project" activeClassName="selected">
+            <NavLink className={({ isActive }) => cn("menu-item", isActive && "selected")} to="/project" end>
               Project _
             </NavLink>
-            <NavLink className="menu-item" to="/study" activeClassName="selected">
+            <NavLink className={({ isActive }) => cn("menu-item", isActive && "selected")} to="/study" end>
               Study _
             </NavLink>
             <a className="menu-item" target="_blank" href="https://daeun012.github.io/" rel="noreferrer">
