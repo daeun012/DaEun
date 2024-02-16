@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
-import { CSSTransition, TransitionGroup } from "react-transition-group";
+import { CSSTransition, SwitchTransition, TransitionGroup } from "react-transition-group";
 import Header from "./components/Header/Header";
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -25,8 +25,8 @@ const App = () => {
     <>
       <Header />
       <div className="frame" />
-      <TransitionGroup className="fixed-container">
-        <CSSTransition key={location.pathname} classNames="fade" timeout={600}>
+      <SwitchTransition className="fixed-container">
+        <CSSTransition key={location.pathname} classNames="fade" timeout={500} unmountOnExit>
           <div className="page">
             <div className="layout-container">
               <div className="main-container">
@@ -45,7 +45,7 @@ const App = () => {
             </div>
           </div>
         </CSSTransition>
-      </TransitionGroup>
+      </SwitchTransition>
     </>
   );
 };

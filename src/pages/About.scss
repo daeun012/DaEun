@@ -74,6 +74,13 @@
           margin: 0 0 10px;
           border-bottom: 1px solid $nd04;
         }
+
+        .skill-img-wrapper {
+          display: flex;
+          align-items: center;
+          flex-wrap: wrap;
+          gap: 10px;
+        }
       }
     }
   }

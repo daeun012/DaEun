@@ -33,28 +33,28 @@ const About = () => (
       <div className="skill-group">
         <div className="skill">
           <h3>Frontend</h3>
-          <div className="img">
+          <div className="skill-img-wrapper">
             <img src="https://daeun012.github.io/DaEun/images/web.png" alt="html" height="100" width="250" />
             <img src="https://daeun012.github.io/DaEun/images/react.png" alt="react" width="90" />
             <img src="https://daeun012.github.io/DaEun/images/redux.png" alt="redux" width="100" />
             <img src="https://daeun012.github.io/DaEun/images/typescript.png" alt="typescript" width="100" />
             <img src="https://daeun012.github.io/DaEun/images/openlayers.png" alt="openlayers" width="100" />
-            <img src="https://daeun012.github.io/DaEun/images/ant-design.png" alt="ant-design" width="100" />
             <img src="https://daeun012.github.io/DaEun/images/bootstrap.png" alt="bootstrap" width="100" />
+            <img src="https://daeun012.github.io/DaEun/images/ant-design.png" alt="ant-design" height="50" width="200" />
           </div>
         </div>
         <div className="skill">
           <h3>Backend</h3>
-          <div className="img">
+          <div className="skill-img-wrapper">
             <img src="https://daeun012.github.io/DaEun/images/nodejs.png" alt="node.js" height="100" width="100" />
             <img src="https://daeun012.github.io/DaEun/images/express.png" height="100" alt="express.js" width="150" />
-            <img src="https://daeun012.github.io/DaEun/images/mysql.png" alt="mysql" height="100" width="100" style={{ marginRight: 25 }} />
             <img src="https://daeun012.github.io/DaEun/images/mongodb.png" alt="mongoDB" height="100" width="100" />
+            <img src="https://daeun012.github.io/DaEun/images/mysql.png" alt="mysql" height="100" width="100" />
           </div>
         </div>
         <div className="skill">
           <h3>Etc</h3>
-          <div className="img">
+          <div className="skill-img-wrapper">
             <img src="https://daeun012.github.io/DaEun/images/git.png" alt="git" height="100" width="100" />
             <img src="https://daeun012.github.io/DaEun/images/github.png" alt="github" height="100" width="100" />
             <img src="https://daeun012.github.io/DaEun/images/gitkraken.png" alt="gitkraken" height="100" width="100" />
@@ -62,7 +62,7 @@ const About = () => (
         </div>
         <div className="skill">
           <h3>Certificate</h3>
-          <div className="img">
+          <div className="skill-img-wrapper">
             <img src="https://daeun012.github.io/DaEun/images/certificate.jpg" alt="certificate" height="100" width="130" />
           </div>
         </div>

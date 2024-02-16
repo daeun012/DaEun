@@ -18,7 +18,7 @@ const Header = () => {
           </Link>
         </div>
         <div className="items right-side">
-          <MenuIcon open={open} toggleMenu={() => setOpen(!open)} />
+          <MenuIcon open={open} toggleMenu={() => setOpen((prev) => !prev)} />
           <div className="menu">
             <NavLink className={({ isActive }) => cn("menu-item", isActive && "selected")} to="/about" end>
               About _
@@ -37,8 +37,8 @@ const Header = () => {
             </a>
           </div>
 
-          <CSSTransition classNames="mobile-menu" in={open} timeout={300} unmountOnExit>
-            <div className="mobile-menu-wrapper" onClick={() => setOpen(!open)}>
+          <CSSTransition classNames="mobile-menu" in={open} timeout={500} unmountOnExit>
+            <div className="mobile-menu-wrapper" onClick={() => setOpen(false)}>
               <div className="menu-buttons-group">
                 <ButtonNavLink name="About" />
                 <ButtonNavLink name="Career" />
