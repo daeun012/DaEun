@@ -4,6 +4,7 @@
   margin: 0 auto;
   padding: 64px 28px 128px;
   font-size: 16px;
+
   .title {
     font-size: 36px;
     line-height: 1.4;
@@ -17,12 +18,14 @@
       color: $b100;
     }
   }
+
   .bar {
     background-color: $nd08;
     max-width: 400px;
     width: 70%;
     height: 1px;
   }
+
   .body {
     word-break: keep-all;
     font-size: 18px;
@@ -46,6 +49,7 @@
       background-color: $nd04;
       border-radius: 20px;
       padding: 2px 16px;
+      margin-right: 2px;
       &:visited {
         color: $primary-color;
         background-color: $nd04;

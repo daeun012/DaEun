@@ -8,6 +8,7 @@ import Project from "./pages/Project";
 import ProjectDetail from "./pages/ProjectDetail";
 import Study from "./pages/Study";
 import Career from "./pages/Career";
+import CareerDetail from "./pages/CareerDetail";
 
 const ScrollToTop = (props) => {
   const location = useLocation();
@@ -37,7 +38,7 @@ const App = () => {
                     <Route path="project" element={<Project />} />
                     <Route path="project/*" element={<ProjectDetail />} />
                     <Route path="career" element={<Career />} />
-                    <Route path="career/*" element={<ProjectDetail />} />
+                    <Route path="career/*" element={<CareerDetail />} />
                     <Route path="study" element={<Study />} />
                   </Routes>
                 </ScrollToTop>
