@@ -3,7 +3,7 @@ import PageTitle from '../components/PageTitle/PageTitle';
 import Card from '../components/Card/Card';
 import { useLocation } from 'react-router-dom';
 
-export default function Project() {
+export default function ProjectPage() {
 	const { pathname } = useLocation();
 
 	return (

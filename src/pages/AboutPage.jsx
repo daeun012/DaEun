@@ -2,7 +2,7 @@ import React from 'react';
 import PageTitle from '../components/PageTitle/PageTitle';
 import './AboutPage.scss';
 
-export default function About() {
+export default function AboutPage() {
 	return (
 		<div className="about">
 			<PageTitle title="About" />

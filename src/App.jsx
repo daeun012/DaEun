@@ -2,11 +2,11 @@ import React, { useEffect } from 'react';
 import { Route, Routes, useLocation } from 'react-router-dom';
 import { CSSTransition, SwitchTransition, TransitionGroup } from 'react-transition-group';
 import Header from './components/Header/Header';
-import Home from './pages/Home';
+import Home from './pages/HomePage';
 import About from './pages/AboutPage';
-import Project from './pages/Project';
+import Project from './pages/ProjectPage';
 import ProjectDetail from './pages/ProjectDetail';
-import Study from './pages/Study';
+import Study from './pages/StudyPage';
 import Career from './pages/CareerPage';
 import CareerDetail from './pages/CareerDetail';
 

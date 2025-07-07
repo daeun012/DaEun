@@ -2,7 +2,7 @@ import React from 'react';
 import PageTitle from '../components/PageTitle/PageTitle';
 import './Study.scss';
 
-export default function Page() {
+export default function StudyPage() {
 	return (
 		<div className="container-study">
 			<PageTitle title="Study" />
