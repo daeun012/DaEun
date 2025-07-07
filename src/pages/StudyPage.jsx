@@ -1,6 +1,6 @@
 import React from 'react';
 import PageTitle from '../components/PageTitle/PageTitle';
-import './Study.scss';
+import './StudyPage.scss';
 
 export default function StudyPage() {
 	return (
