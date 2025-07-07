@@ -1,127 +1,125 @@
 @import "./assets/css/variables.scss";
 @import "./assets/css/detail.scss";
-
-@font-face {
-  font-family: "Wanted Sans Variable", "Wanted Sans", -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  src: url("https://cdn.jsdelivr.net/gh/wanteddev/wanted-sans@v1.0.3/packages/wanted-sans/fonts/webfonts/variable/split/WantedSansVariable.min.css");
-}
+@import "./assets/css/font.scss";
 
 html {
-  font-family: "Wanted Sans Variable", "Wanted Sans", -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  font-size: 16px;
+	font-family: "Wanted Sans Variable", "Wanted Sans", -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI",
+		"Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+		sans-serif, "Montserrat";
+	font-size: 16px;
 }
 body {
-  margin: 0;
-  padding: 0;
+	margin: 0;
+	padding: 0;
 }
 div {
-  box-sizing: border-box;
-  -webkit-overflow-scrolling: touch;
-  -webkit-tap-highlight-color: transparent;
+	box-sizing: border-box;
+	-webkit-overflow-scrolling: touch;
+	-webkit-tap-highlight-color: transparent;
 }
 
 .frame {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: 0;
-  border: 12px solid $nd04;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	z-index: 0;
+	border: 12px solid $nd04;
 }
 .fixed-container {
-  position: relative;
-  z-index: 1;
+	position: relative;
+	z-index: 1;
 }
 .layout-container {
-  width: 100%;
-  margin: 0 auto;
-  min-height: 100vh;
+	width: 100%;
+	margin: 0 auto;
+	min-height: 100vh;
 }
 .main-container {
-  padding-top: 70px;
-  padding-bottom: 120px;
+	padding-top: 70px;
+	padding-bottom: 120px;
 }
 
 @media (max-width: 1280px) {
-  .layout-container {
-    max-width: 768px;
-  }
+	.layout-container {
+		max-width: 768px;
+	}
 }
 
 .page {
-  position: absolute;
-  left: 15px;
-  right: 15px;
+	position: absolute;
+	left: 15px;
+	right: 15px;
 }
 
 .fade-enter {
-  opacity: 0;
-  transform: translateY(-40px);
+	opacity: 0;
+	transform: translateY(-40px);
 }
 
 .fade-enter-active {
-  opacity: 1;
-  transform: translateY(0);
-  transition: all 0.5s ease;
+	opacity: 1;
+	transform: translateY(0);
+	transition: all 0.5s ease;
 }
 
 .fade-exit {
-  opacity: 1;
-  transform: translateY(0);
+	opacity: 1;
+	transform: translateY(0);
 }
 
 .fade-exit-active {
-  opacity: 0;
-  transform: translateY(-40px);
-  transition: all 0.5s ease;
+	opacity: 0;
+	transform: translateY(-40px);
+	transition: all 0.5s ease;
 }
 
 ::selection {
-  background-color: $y100bg;
-  color: $primary-color;
+	background-color: $y100bg;
+	color: $primary-color;
 }
 ::-webkit-scrollbar {
-  display: none;
+	display: none;
 }
 .responsive-container {
-  width: 100%;
-  max-width: 2268px;
-  margin: 0 auto;
+	width: 100%;
+	max-width: 2268px;
+	margin: 0 auto;
 }
 button {
-  &:focus {
-    outline: none;
-  }
+	&:focus {
+		outline: none;
+	}
 }
 .card-list {
-  width: 100%;
-  padding: 0 4px;
-  @include flex(center, flex-start);
-  flex-wrap: wrap;
-  margin: 32px auto;
+	width: 100%;
+	padding: 0 4px;
+	@include flex(center, flex-start);
+	flex-wrap: wrap;
+	margin: 32px auto;
 }
 @media (max-width: 2268px) {
-  .responsive-container {
-    max-width: 1900px;
-  }
+	.responsive-container {
+		max-width: 1900px;
+	}
 }
 @media (max-width: 2000px) {
-  .responsive-container {
-    max-width: 1532px;
-  }
+	.responsive-container {
+		max-width: 1532px;
+	}
 }
 @media (max-width: 1532px) {
-  .responsive-container {
-    max-width: 1164px;
-  }
+	.responsive-container {
+		max-width: 1164px;
+	}
 }
 @media (max-width: 1280px) {
-  .responsive-container {
-    max-width: 768px;
-  }
-  .card-list {
-    @include flex(center, space-between);
-    padding: 0 20px;
-  }
+	.responsive-container {
+		max-width: 768px;
+	}
+	.card-list {
+		@include flex(center, space-between);
+		padding: 0 20px;
+	}
 }
