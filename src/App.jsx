@@ -6,7 +6,6 @@ import Home from "./pages/HomePage";
 import About from "./pages/AboutPage";
 import Project from "./pages/ProjectPage";
 import ProjectDetail from "./pages/ProjectDetail";
-import Study from "./pages/StudyPage";
 import Career from "./pages/CareerPage";
 import CareerDetail from "./pages/CareerDetail";
 
@@ -39,7 +38,6 @@ export default function App() {
 										<Route path="project/*" element={<ProjectDetail />} />
 										<Route path="career" element={<Career />} />
 										<Route path="career/*" element={<CareerDetail />} />
-										<Route path="study" element={<Study />} />
 									</Routes>
 								</ScrollToTop>
 							</div>

@@ -1,8 +1,8 @@
-import React from 'react';
-import ButtonNavLink from '../components/ButtonNavLink/ButtonNavLink';
-import './HomePage.scss';
+import React from "react";
+import ButtonNavLink from "../components/ButtonNavLink/ButtonNavLink";
+import "./HomePage.scss";
 
-export default function HomeP() {
+export default function HomePage() {
 	return (
 		<section className="home">
 			<div className="home-box-wrapper">
@@ -18,7 +18,6 @@ export default function HomeP() {
 				<ButtonNavLink name="About" />
 				<ButtonNavLink name="Career" />
 				<ButtonNavLink name="Project" />
-				<ButtonNavLink name="Study" />
 				<ButtonNavLink name="Blog" />
 			</div>
 		</section>
