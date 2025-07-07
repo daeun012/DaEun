@@ -3,7 +3,7 @@
 .buttonNavLink {
 	width: 100%;
 	max-width: 440px;
-	padding: 5px 25px 5px 32px;
+	padding: 12px 25px 12px 32px;
 	background-color: $nd04;
 	border-radius: 60px;
 	margin: 12px 8px;
@@ -16,32 +16,34 @@
 		align-items: center;
 		cursor: pointer;
 		text-decoration: none;
+
+		.title {
+			font-family: "Montserrat";
+			font-size: 36px;
+			font-weight: 700;
+			color: $b300;
+
+			.bar {
+				display: inline-block;
+				width: 60px;
+				height: 32px;
+				border-bottom: 4px solid $b300;
+			}
+		}
+
+		.arrow-wrapper {
+			width: 40px;
+			height: 40px;
+			border: 1px solid $primary-color;
+			border-radius: 30px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
 	}
 
 	&:hover {
 		transform: scale(1.05) translateY(-4px);
-	}
-	.title {
-		font-family: "Montserrat";
-		font-size: 36px;
-		font-weight: 700;
-		transform: translateY(-4px);
-		color: $b300;
-	}
-	.bar {
-		display: inline-block;
-		width: 60px;
-		height: 48px;
-		border-bottom: 4px solid $b300;
-	}
-	.arrow-wrapper {
-		width: 40px;
-		height: 40px;
-		border: 1px solid $primary-color;
-		border-radius: 30px;
-		display: flex;
-		justify-content: center;
-		align-items: center;
 	}
 }
 @media (max-width: 1280px) {
