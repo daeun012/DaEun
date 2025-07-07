@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { CSSTransition } from "react-transition-group";
-import ButtonNavLink from "../ButtonNavLink/ButtonNavLink";
+import ButtonNavLink from "../NavLinkButton/NavLinkButton";
 import MenuIcon from "../MenuIcon/MenuIcon";
 import cn from "classnames";
 import "./Header.scss";

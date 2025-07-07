@@ -1,5 +1,5 @@
 import React from "react";
-import ButtonNavLink from "../components/ButtonNavLink/ButtonNavLink";
+import NavLinkButton from "../components/NavLinkButton/NavLinkButton";
 import "./HomePage.scss";
 
 export default function HomePage() {
@@ -15,10 +15,10 @@ export default function HomePage() {
 				</div>
 			</div>
 			<div className="buttonNav">
-				<ButtonNavLink name="About" />
-				<ButtonNavLink name="Career" />
-				<ButtonNavLink name="Project" />
-				<ButtonNavLink name="Blog" />
+				<NavLinkButton name="About" />
+				<NavLinkButton name="Career" />
+				<NavLinkButton name="Project" />
+				<NavLinkButton name="Blog" />
 			</div>
 		</section>
 	);

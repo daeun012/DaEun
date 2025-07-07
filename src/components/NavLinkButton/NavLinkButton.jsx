@@ -1,8 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./ButtonNavLink.scss";
+import "./NavLinkButton.scss";
+import { PiArrowCircleRightThin } from "react-icons/pi";
 
-export default function ButtonNavLink({ name }) {
+export default function NavLinkButton({ name }) {
 	return (
 		<div className="buttonNavLink">
 			{name === "Blog" ? (
@@ -10,18 +11,14 @@ export default function ButtonNavLink({ name }) {
 					<div className="title">
 						{name} <div className="bar" />
 					</div>
-					<div className="arrow-wrapper">
-						<img src="https://daeun012.github.io/DaEun/images/link_arrow.svg" alt={name} />
-					</div>
+					<PiArrowCircleRightThin className="arrow-icon" size={50} />
 				</a>
 			) : (
 				<Link className="link-wrapper" activeclassname="selected" to={`/${name.toLowerCase()}`}>
 					<div className="title">
 						{name} <div className="bar" />
 					</div>
-					<div className="arrow-wrapper">
-						<img src="https://daeun012.github.io/DaEun/images/link_arrow.svg" alt={name} />
-					</div>
+					<PiArrowCircleRightThin className="arrow-icon" size={50} />
 				</Link>
 			)}
 		</div>
