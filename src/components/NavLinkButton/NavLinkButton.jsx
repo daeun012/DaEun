@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import "./NavLinkButton.scss";
 import { PiArrowCircleRightThin } from "react-icons/pi";

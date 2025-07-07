@@ -2,11 +2,11 @@ import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { CSSTransition } from "react-transition-group";
 import ButtonNavLink from "../NavLinkButton/NavLinkButton";
-import MenuIcon from "../MenuIcon/MenuIcon";
+import MenuButton from "./MenuButton/MenuButton";
 import cn from "classnames";
 import "./Header.scss";
 
-const Header = () => {
+export default function Header() {
 	const [open, setOpen] = useState(false);
 
 	return (
@@ -18,7 +18,7 @@ const Header = () => {
 					</Link>
 				</div>
 				<div className="items right-side">
-					<MenuIcon open={open} toggleMenu={() => setOpen((prev) => !prev)} />
+					<MenuButton open={open} toggleMenu={() => setOpen((prev) => !prev)} />
 					<div className="menu">
 						<NavLink className={({ isActive }) => cn("menu-item", isActive && "selected")} to="/about" end>
 							About _
@@ -48,6 +48,4 @@ const Header = () => {
 			</div>
 		</div>
 	);
-};
-
-export default Header;
+}

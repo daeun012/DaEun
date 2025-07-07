@@ -11,7 +11,10 @@ export default function HomePage() {
 				</div>
 				<div className="profile-box">
 					<div className="title">DaEun</div>
-					<div className="desc">Front-end Developer</div>
+					<div className="desc">
+						<div>UX/UI Designer</div>
+						<div>Front-end Developer</div>
+					</div>
 				</div>
 			</div>
 			<div className="buttonNav">
