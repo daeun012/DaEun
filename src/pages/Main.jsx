@@ -1,7 +1,7 @@
 import NavLinkButton from "../components/navLinkButton/NavLinkButton";
-import "./Home.scss";
+import "./Main.scss";
 
-export default function Home() {
+export default function Main() {
 	return (
 		<section className="home">
 			<div className="home-box-wrapper">

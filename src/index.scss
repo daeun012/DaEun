@@ -7,75 +7,17 @@ html {
 		"Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
 		sans-serif, "Montserrat";
 	font-size: 16px;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
+
 body {
 	margin: 0;
 	padding: 0;
 }
+
 div {
 	box-sizing: border-box;
-	-webkit-overflow-scrolling: touch;
-	-webkit-tap-highlight-color: transparent;
-}
-
-.frame {
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100vw;
-	height: 100vh;
-	z-index: 0;
-	border: 12px solid $nd04;
-}
-.fixed-container {
-	position: relative;
-	z-index: 1;
-}
-.layout-container {
-	width: 100%;
-	margin: 0 auto;
-	min-height: 100vh;
-}
-.main-container {
-	padding-top: 70px;
-	padding-bottom: 120px;
-}
-
-.page {
-	position: absolute;
-	left: 15px;
-	right: 15px;
-}
-
-.fade-enter {
-	opacity: 0;
-	transform: translateY(-40px);
-}
-
-.fade-enter-active {
-	opacity: 1;
-	transform: translateY(0);
-	transition: all 0.5s ease;
-}
-
-.fade-exit {
-	opacity: 1;
-	transform: translateY(0);
-}
-
-.fade-exit-active {
-	opacity: 0;
-	transform: translateY(-40px);
-	transition: all 0.5s ease;
-}
-
-::selection {
-	background-color: $y100bg;
-	color: $primary-color;
-}
-
-::-webkit-scrollbar {
-	display: none;
 }
 
 @media (max-width: 1280px) {
