@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import cn from "classnames";
+import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { CSSTransition } from "react-transition-group";
-import ButtonNavLink from "../NavLinkButton/NavLinkButton";
-import MenuButton from "./MenuButton/MenuButton";
-import cn from "classnames";
+import ButtonNavLink from "../navLinkButton/NavLinkButton";
 import "./Header.scss";
+import MenuButton from "./menuButton/MenuButton";
 
 export default function Header() {
 	const [open, setOpen] = useState(false);

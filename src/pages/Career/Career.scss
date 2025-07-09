@@ -1,0 +1,40 @@
+@import "../../assets/css/variables.scss";
+
+.responsive-container {
+	width: 100%;
+	max-width: 2268px;
+	margin: 0 auto;
+
+	.card-list {
+		width: 100%;
+		padding: 0 4px;
+		@include flex(center, flex-start);
+		flex-wrap: wrap;
+		margin: 32px auto;
+	}
+}
+
+@media (max-width: 2268px) {
+	.responsive-container {
+		max-width: 1900px;
+	}
+}
+@media (max-width: 2000px) {
+	.responsive-container {
+		max-width: 1532px;
+	}
+}
+@media (max-width: 1532px) {
+	.responsive-container {
+		max-width: 1164px;
+	}
+}
+@media (max-width: 1280px) {
+	.responsive-container {
+		max-width: 768px;
+		.card-list {
+			@include flex(center, space-between);
+			padding: 0 20px;
+		}
+	}
+}

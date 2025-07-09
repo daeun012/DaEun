@@ -1,15 +1,22 @@
-import React from 'react';
-import PageTitle from '../components/PageTitle/PageTitle';
-import Card from '../components/Card/Card';
-import { useLocation } from 'react-router-dom';
+import { useLocation } from "react-router-dom";
+import Card from "../../components/card/Card";
+import PageTitle from "../../components/pageTitle/PageTitle";
+import "./Project.scss";
 
-export default function ProjectPage() {
+export default function Project() {
 	const { pathname } = useLocation();
 
 	return (
 		<div className="responsive-container">
 			<PageTitle title="Project" />
 			<div className="card-list">
+				<Card
+					img="https://daeun012.github.io/DaEun/images/labelimage.png"
+					title="LabelImage"
+					subTitle="react"
+					desc="이미지 라벨 툴"
+					match={`${pathname}/LabelImage`}
+				/>
 				<Card
 					img="https://daeun012.github.io/DaEun/images/funbun.png"
 					title="FUN & BUN"
@@ -30,13 +37,6 @@ export default function ProjectPage() {
 					subTitle="react"
 					desc="포토폴리오"
 					match={`${pathname}/Portfolio`}
-				/>
-				<Card
-					img="https://daeun012.github.io/DaEun/images/labelimage.png"
-					title="LabelImage"
-					subTitle="react"
-					desc="이미지 라벨 툴"
-					match={`${pathname}/LabelImage`}
 				/>
 			</div>
 		</div>

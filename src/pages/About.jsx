@@ -1,6 +1,5 @@
-import React from "react";
-import PageTitle from "../components/PageTitle/PageTitle";
-import "./AboutPage.scss";
+import PageTitle from "../components/pageTitle/PageTitle";
+import "./About.scss";
 
 const skills = {
 	design: ["Figma"],
@@ -10,7 +9,7 @@ const skills = {
 	etc: ["React", "Typescript", "Material UI", "Ant Design", "Bootstrap", "Storybook", "Node.js", "MySQL", "MongoDB"],
 };
 
-export default function AboutPage() {
+export default function About() {
 	const renderSkillItems = (array) => {
 		return array.map((value, index) => (
 			<div className="skill-item" key={index}>

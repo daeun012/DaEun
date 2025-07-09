@@ -1,8 +1,7 @@
-import React from "react";
-import NavLinkButton from "../components/NavLinkButton/NavLinkButton";
-import "./HomePage.scss";
+import NavLinkButton from "../components/navLinkButton/NavLinkButton";
+import "./Home.scss";
 
-export default function HomePage() {
+export default function Home() {
 	return (
 		<section className="home">
 			<div className="home-box-wrapper">

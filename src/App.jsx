@@ -1,13 +1,13 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
 import { CSSTransition, SwitchTransition } from "react-transition-group";
-import Header from "./components/Header/Header";
-import Home from "./pages/HomePage";
-import About from "./pages/AboutPage";
-import Project from "./pages/ProjectPage";
-import ProjectDetail from "./pages/ProjectDetail";
-import Career from "./pages/CareerPage";
-import CareerDetail from "./pages/CareerDetail";
+import Header from "./components/header/Header";
+import About from "./pages/About";
+import Career from "./pages/career/Career";
+import CareerDetail from "./pages/career/careerDetail";
+import Home from "./pages/Home";
+import Project from "./pages/project/Project";
+import ProjectDetail from "./pages/project/projectDetail";
 
 const ScrollToTop = (props) => {
 	const location = useLocation();

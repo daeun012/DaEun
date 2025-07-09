@@ -1,9 +1,9 @@
-import React from 'react';
-import PageTitle from '../components/PageTitle/PageTitle';
-import Card from '../components/Card/Card';
-import { useLocation } from 'react-router-dom';
+import { useLocation } from "react-router-dom";
+import Card from "../../components/card/Card";
+import PageTitle from "../../components/pageTitle/PageTitle";
+import "./Career.scss";
 
-export default function CareerPage() {
+export default function Career() {
 	const { pathname } = useLocation();
 
 	return (
