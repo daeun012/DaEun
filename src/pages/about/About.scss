@@ -1,4 +1,4 @@
-@import "../../assets/css/variables.scss";
+@import "assets/css/variables.scss";
 
 .about {
 	background-color: $nd04;
@@ -49,21 +49,6 @@
 					color: $nd40;
 				}
 			}
-		}
-	}
-}
-
-@media (max-width: 768px) {
-	.about {
-		margin: 0 auto;
-		padding: 0px;
-
-		.content {
-			font-size: 15px;
-		}
-
-		.personal-info {
-			font-size: 12px;
 		}
 	}
 }
