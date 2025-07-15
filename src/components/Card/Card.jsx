@@ -1,17 +1,13 @@
-import { Link } from "react-router-dom";
 import "./Card.scss";
 
-export default function Card({ img, title, subTitle, desc, match }) {
+export default function Card({ img, title, subTitle }) {
 	return (
-		<Link className="card" to={match}>
-			<div className="image-area">
-				<img src={img} alt={title} />
+		<div className="card">
+			<img src={img} alt={title} />
+			<div className="info">
+				<div className="title">{title}</div>
+				<span className="sub-title"> {subTitle} </span>
 			</div>
-			<div className="title">
-				{title}
-				<span className="sub-title"> / {subTitle} </span>
-			</div>
-			<div className="desc">{desc}</div>
-		</Link>
+		</div>
 	);
 }

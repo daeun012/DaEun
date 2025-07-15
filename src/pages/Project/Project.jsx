@@ -1,44 +1,49 @@
-import { useLocation } from "react-router-dom";
 import Card from "../../components/card/Card";
 import PageTitle from "../../components/pageTitle/PageTitle";
 import "./Project.scss";
 
+const projects = [
+	{
+		img: "https://daeun012.github.io/DaEun/images/humechanic.jpg",
+		title: "인공지능 기반 광고 심의 서비스",
+		subTitle: "html, css, javascript",
+	},
+	{
+		img: "https://daeun012.github.io/DaEun/images/humechanic.jpg",
+		title: "캐치테이블 탐색 경험 개선",
+		subTitle: "html, css, javascript",
+	},
+	{
+		img: "https://daeun012.github.io/DaEun/images/humechanic.jpg",
+		title: "배달의 민족 리뷰 시스템 개선",
+		subTitle: "html, css, javascript",
+	},
+	{ img: "https://daeun012.github.io/DaEun/images/labelimage.png", title: "이미지 라벨 툴", subTitle: "react" },
+	{
+		img: "https://daeun012.github.io/DaEun/images/funbun.png",
+		title: "대학생들을 위한 선후배 매칭 및 그룹 채팅 서비스",
+		subTitle: "react, nodejs, mongo DB, material UI, JSON web tokens",
+	},
+	{
+		img: "https://daeun012.github.io/DaEun/images/humechanic.jpg",
+		title: "로봇 동아리 홈페이지",
+		subTitle: "html, css, javascript",
+	},
+];
+
 export default function Project() {
-	const { pathname } = useLocation();
+	const renderProjectItems = (array) => {
+		return array.map((value, index) => (
+			<Card key={index} img={value.img} title={value.title} subTitle={value.subTitle} />
+		));
+	};
 
 	return (
-		<div className="responsive-container">
-			<PageTitle title="Project" />
-			<div className="card-list">
-				<Card
-					img="https://daeun012.github.io/DaEun/images/labelimage.png"
-					title="LabelImage"
-					subTitle="react"
-					desc="이미지 라벨 툴"
-					match={`${pathname}/LabelImage`}
-				/>
-				<Card
-					img="https://daeun012.github.io/DaEun/images/funbun.png"
-					title="FUN & BUN"
-					subTitle="react, nodejs..."
-					desc="대학생들을 위한 랜덤 매칭 및 그룹 채팅 서비스"
-					match={`${pathname}/FunBun`}
-				/>
-				<Card
-					img="https://daeun012.github.io/DaEun/images/humechanic.jpg"
-					title="Humechanic"
-					subTitle="html, css, javascript"
-					desc="로봇 동아리 홈페이지"
-					match={`${pathname}/Humechanic`}
-				/>
-				<Card
-					img="https://daeun012.github.io/DaEun/images/portfolio.png"
-					title="Portfolio"
-					subTitle="react"
-					desc="포토폴리오"
-					match={`${pathname}/Portfolio`}
-				/>
+		<section className="project">
+			<div className="project-container">
+				<PageTitle title="Projects" />
+				<div className="content">{renderProjectItems(projects)}</div>
 			</div>
-		</div>
+		</section>
 	);
 }
