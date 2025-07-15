@@ -1,15 +1,9 @@
 @import "assets/css/variables.scss";
 
-.page-title {
+.section-title {
 	font-family: "Montserrat";
 	font-size: 40px;
 	font-weight: 800;
 	color: $b300;
 	margin: 0 auto 3rem;
-}
-
-@media (max-width: 768px) {
-	.page-title {
-		padding: 32px 24px;
-	}
 }
