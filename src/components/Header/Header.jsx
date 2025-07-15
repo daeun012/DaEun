@@ -7,6 +7,7 @@ const NAV_MENU = [
 	{ idx: 0, name: "About" },
 	{ idx: 1, name: "Skills" },
 	{ idx: 2, name: "Projects" },
+	{ idx: 3, name: "Career" },
 ];
 
 export default function Header({ scrollRef }) {
@@ -41,6 +42,36 @@ export default function Header({ scrollRef }) {
 		};
 	}, [scrollRef]);
 
+	const renderNavMenu = () => {
+		return NAV_MENU.map(({ idx, name }) => (
+			<button
+				key={idx}
+				className={"menu-item"}
+				ref={(ref) => (navRef.current[idx] = ref)}
+				onClick={() => {
+					setNavIndex(idx);
+				}}
+			>
+				{name}
+			</button>
+		));
+	};
+
+	const renderMobileMenu = () => {
+		return NAV_MENU.map(({ idx, name }) => (
+			<button
+				key={idx}
+				className={"mobile-menu-item"}
+				ref={(ref) => (navRef.current[idx] = ref)}
+				onClick={() => {
+					setNavIndex(idx);
+				}}
+			>
+				{name}
+			</button>
+		));
+	};
+
 	return (
 		<header className="header">
 			<div className="container">
@@ -48,37 +79,13 @@ export default function Header({ scrollRef }) {
 					<button className="logo">DaEun's Portfolio</button>
 				</div>
 				<div className="items right-side">
-					<nav className="menu">
-						{NAV_MENU.map(({ idx, name }) => (
-							<button
-								key={idx}
-								className={"menu-item"}
-								ref={(ref) => (navRef.current[idx] = ref)}
-								onClick={() => {
-									setNavIndex(idx);
-								}}
-							>
-								{name}
-							</button>
-						))}
-					</nav>
+					<nav className="menu">{renderNavMenu()}</nav>
 					<MenuButton open={open} toggleMenu={() => setOpen((prev) => !prev)} />
 				</div>
 			</div>
 
 			<div className={cn("mobile-menu-wrapper", { isOpen: open })} onClick={() => setOpen((prev) => !prev)}>
-				{NAV_MENU.map(({ idx, name }) => (
-					<button
-						key={idx}
-						className={"mobile-menu-item"}
-						ref={(ref) => (navRef.current[idx] = ref)}
-						onClick={() => {
-							setNavIndex(idx);
-						}}
-					>
-						{name}
-					</button>
-				))}
+				{renderMobileMenu()}
 			</div>
 		</header>
 	);

@@ -7,7 +7,7 @@ export default function Career({ scrollRef }) {
 	const { pathname } = useLocation();
 
 	return (
-		<section className="career-container">
+		<section className="career-container" ref={(careerRef) => (scrollRef.current[3] = careerRef)}>
 			<SectionTitle title="Career" />
 			<div className="conent">
 				<Card
