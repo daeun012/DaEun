@@ -6,9 +6,9 @@ import Skills from "./skill/Skill";
 export default function Main({ scrollRef }) {
 	return (
 		<div className="main">
-			<About />
-			<Skills />
-			<Project />
+			<About scrollRef={scrollRef} />
+			<Skills scrollRef={scrollRef} />
+			<Project scrollRef={scrollRef} />
 		</div>
 	);
 }

@@ -1,8 +1,8 @@
 import "./About.scss";
 
-export default function About() {
+export default function About({ scrollRef }) {
 	return (
-		<section className="about">
+		<section className="about" ref={(aboutRef) => (scrollRef.current[0] = aboutRef)}>
 			<div className="about-container">
 				<div className="title">
 					<div>불필요한 것들은 덜어내고</div>

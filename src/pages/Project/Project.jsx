@@ -31,7 +31,7 @@ const projects = [
 	},
 ];
 
-export default function Project() {
+export default function Project({ scrollRef }) {
 	const renderProjectItems = (array) => {
 		return array.map((value, index) => (
 			<Card key={index} img={value.img} title={value.title} subTitle={value.subTitle} />
@@ -39,7 +39,7 @@ export default function Project() {
 	};
 
 	return (
-		<section className="project">
+		<section className="project" ref={(projectRef) => (scrollRef.current[2] = projectRef)}>
 			<div className="project-container">
 				<PageTitle title="Projects" />
 				<div className="content">{renderProjectItems(projects)}</div>

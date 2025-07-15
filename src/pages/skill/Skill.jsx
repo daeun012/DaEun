@@ -29,7 +29,7 @@ const skills = {
 	],
 };
 
-export default function Skills() {
+export default function Skills({ scrollRef }) {
 	const renderSkillItems = (array) => {
 		return array.map((value, index) => (
 			<div className="skill-item" key={index} style={{ borderColor: value.color }}>
@@ -39,7 +39,7 @@ export default function Skills() {
 	};
 
 	return (
-		<section className="skill">
+		<section className="skill" ref={(skillRef) => (scrollRef.current[1] = skillRef)}>
 			<div className="skill-container">
 				<PageTitle title="Skills" />
 

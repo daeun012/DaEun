@@ -5,8 +5,8 @@ import MenuButton from "./menuButton/MenuButton";
 
 const NAV_MENU = [
 	{ idx: 0, name: "About" },
-	{ idx: 1, name: "Project" },
-	{ idx: 2, name: "Career" },
+	{ idx: 1, name: "Skills" },
+	{ idx: 2, name: "Projects" },
 ];
 
 export default function Header({ scrollRef }) {
