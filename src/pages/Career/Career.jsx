@@ -3,13 +3,13 @@ import Card from "../../components/card/Card";
 import PageTitle from "../../components/pageTitle/PageTitle";
 import "./Career.scss";
 
-export default function Career() {
+export default function Career({ scrollRef }) {
 	const { pathname } = useLocation();
 
 	return (
-		<div className="responsive-container">
+		<section className="career-container">
 			<PageTitle title="Career" />
-			<div className="card-list">
+			<div className="conent">
 				<Card
 					img="https://daeun012.github.io/DaEun/images/sia-logo.svg"
 					title="SIA"
@@ -18,6 +18,6 @@ export default function Career() {
 					match={`${pathname}/SIAnalytics`}
 				/>
 			</div>
-		</div>
+		</section>
 	);
 }
