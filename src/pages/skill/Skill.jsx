@@ -45,23 +45,33 @@ export default function Skills({ scrollRef }) {
 
 				<div className="skill-box">
 					<div className="skill-sets">
-						<div className="skill-title">디자인 및 프로토타이핑</div>
+						<div className="skill-title">
+							<span className="icon">🎨</span>디자인 및 프로토타이핑
+						</div>
 						<div className="skill-item-group">{renderSkillItems(skills.design)}</div>
 					</div>
 					<div className="skill-sets">
-						<div className="skill-title">그래픽 디자인</div>
+						<div className="skill-title">
+							<span className="icon">🧑🏻‍🎨</span>그래픽 디자인
+						</div>
 						<div className="skill-item-group">{renderSkillItems(skills.graphic)}</div>
 					</div>
 					<div className="skill-sets">
-						<div className="skill-title">웹 퍼블리싱 기초</div>
+						<div className="skill-title">
+							<span className="icon">🖥️</span>웹 퍼블리싱 기초
+						</div>
 						<div className="skill-item-group">{renderSkillItems(skills.publish)}</div>
 					</div>
 					<div className="skill-sets">
-						<div className="skill-title">협업 및 피드백</div>
+						<div className="skill-title">
+							<span className="icon">🗣️</span>협업 및 피드백
+						</div>
 						<div className="skill-item-group">{renderSkillItems(skills.communication)}</div>
 					</div>
 					<div className="skill-sets">
-						<div className="skill-title">기타</div>
+						<div className="skill-title">
+							<span className="icon">🚀</span>기타
+						</div>
 						<div className="skill-item-group">{renderSkillItems(skills.etc)}</div>
 					</div>
 				</div>
