@@ -1,4 +1,4 @@
-import PageTitle from "../../components/pageTitle/PageTitle";
+import SectionTitle from "../../components/sectionTitle/SectionTitle";
 import "./Skill.scss";
 
 const skills = {
@@ -41,7 +41,7 @@ export default function Skills({ scrollRef }) {
 	return (
 		<section className="skill" ref={(skillRef) => (scrollRef.current[1] = skillRef)}>
 			<div className="skill-container">
-				<PageTitle title="Skills" />
+				<SectionTitle title="Skills" />
 
 				<div className="skill-box">
 					<div className="skill-sets">

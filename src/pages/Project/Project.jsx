@@ -1,5 +1,5 @@
 import Card from "../../components/card/Card";
-import PageTitle from "../../components/pageTitle/PageTitle";
+import SectionTitle from "../../components/sectionTitle/SectionTitle";
 import "./Project.scss";
 
 const projects = [
@@ -41,7 +41,7 @@ export default function Project({ scrollRef }) {
 	return (
 		<section className="project" ref={(projectRef) => (scrollRef.current[2] = projectRef)}>
 			<div className="project-container">
-				<PageTitle title="Projects" />
+				<SectionTitle title="Projects" />
 				<div className="content">{renderProjectItems(projects)}</div>
 			</div>
 		</section>

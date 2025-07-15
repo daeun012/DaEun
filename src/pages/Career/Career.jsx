@@ -1,6 +1,6 @@
 import { useLocation } from "react-router-dom";
 import Card from "../../components/card/Card";
-import PageTitle from "../../components/pageTitle/PageTitle";
+import SectionTitle from "../../components/sectionTitle/SectionTitle";
 import "./Career.scss";
 
 export default function Career({ scrollRef }) {
@@ -8,7 +8,7 @@ export default function Career({ scrollRef }) {
 
 	return (
 		<section className="career-container">
-			<PageTitle title="Career" />
+			<SectionTitle title="Career" />
 			<div className="conent">
 				<Card
 					img="https://daeun012.github.io/DaEun/images/sia-logo.svg"
