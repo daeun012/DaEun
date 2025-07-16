@@ -1,6 +1,6 @@
 export default function Humechanic() {
 	return (
-		<>
+		<div className="container-detail">
 			<div className="title">
 				Humechanic
 				<div className="sub-title">로봇동아리 홈페이지</div>
@@ -31,6 +31,6 @@ export default function Humechanic() {
 					<li>NodeJS (Express)</li>
 				</p>
 			</div>
-		</>
+		</div>
 	);
 }

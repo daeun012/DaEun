@@ -1,6 +1,6 @@
 export default function FunBun() {
 	return (
-		<>
+		<div className="container-detail">
 			<div className="title">
 				FUN & BUN
 				<div className="sub-title">대학생들을 위한 랜덤 매칭 및 그룹 채팅 서비스</div>
@@ -37,6 +37,6 @@ export default function FunBun() {
 					<li>Axios for API requests</li>
 				</p>
 			</div>
-		</>
+		</div>
 	);
 }

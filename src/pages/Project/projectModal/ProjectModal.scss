@@ -1,0 +1,53 @@
+@import "assets/css/variables.scss";
+
+.project-modal {
+	position: fixed;
+	z-index: 100;
+	top: 0;
+	left: 0;
+	overflow-x: hidden;
+	overflow-y: auto;
+	width: 100%;
+	height: 100%;
+	background-color: $nd90;
+
+	.close-button {
+		position: fixed;
+		top: 4%;
+		right: 2%;
+		color: white;
+	}
+
+	.content {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin: 4rem auto;
+		pointer-events: none;
+
+		.img-container {
+			display: flex;
+			flex-direction: column;
+			pointer-events: auto;
+			align-items: center;
+			gap: 1rem;
+			width: 80%;
+		}
+
+		img {
+			width: 100%;
+			image-rendering: -moz-crisp-edges; /* firefox */
+			image-rendering: -o-crisp-edges; /* opera */
+			image-rendering: -webkit-optimize-contrast; /* chrome(비표준) */
+			image-rendering: crisp-edges;
+			transform: translateZ(0);
+			backface-visibility: hidden;
+			user-select: none;
+		}
+	}
+
+	.container-detail {
+		background-color: $nl100;
+		pointer-events: auto;
+	}
+}

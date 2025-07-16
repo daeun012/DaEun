@@ -17,8 +17,20 @@ body {
 	line-height: 1.6;
 }
 
-@media (max-width: 1280px) {
-	.layout-container {
-		max-width: 768px;
-	}
+.fade-enter {
+	opacity: 0;
+}
+
+.fade-enter-active {
+	opacity: 1;
+	transition: all 0.5s ease;
+}
+
+.fade-exit {
+	opacity: 1;
+}
+
+.fade-exit-active {
+	opacity: 0;
+	transition: all 0.5s ease;
 }

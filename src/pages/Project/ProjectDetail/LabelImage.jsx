@@ -1,6 +1,6 @@
 export default function LabelImage() {
 	return (
-		<>
+		<div className="container-detail">
 			<div className="title">
 				LabelImage
 				<div className="sub-title">AI 학습을 위한 데이터셋을 만드는 도구인 이미지 라벨링 툴</div>
@@ -26,6 +26,6 @@ export default function LabelImage() {
 					<li>React JS</li>
 				</p>
 			</div>
-		</>
+		</div>
 	);
 }

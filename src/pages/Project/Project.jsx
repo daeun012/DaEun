@@ -1,3 +1,4 @@
+import { Link, useLocation } from "react-router-dom";
 import Card from "../../components/card/Card";
 import SectionTitle from "../../components/sectionTitle/SectionTitle";
 import "./Project.scss";
@@ -32,9 +33,13 @@ const projects = [
 ];
 
 export default function Project({ scrollRef }) {
+	const location = useLocation();
+
 	const renderProjectItems = (array) => {
 		return array.map((value, index) => (
-			<Card key={index} img={value.img} title={value.title} subTitle={value.subTitle} />
+			<Link key={index} to={`/project/${index}`} state={{ background: location }} style={{ display: "contents" }}>
+				<Card img={value.img} title={value.title} subTitle={value.subTitle} component={Link} to={"/project"} />
+			</Link>
 		));
 	};
 
