@@ -1,12 +1,12 @@
 import "./Card.scss";
 
-export default function Card({ img, title, subTitle }) {
+export default function Card({ imgSrc, title, date }) {
 	return (
 		<div className="card">
-			<img src={img} alt={title} />
+			<img src={imgSrc} alt={title} />
 			<div className="info">
 				<div className="title">{title}</div>
-				<span className="sub-title"> {subTitle} </span>
+				<span className="date"> {date} </span>
 			</div>
 		</div>
 	);

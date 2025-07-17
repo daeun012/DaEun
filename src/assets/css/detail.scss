@@ -81,6 +81,26 @@
 	}
 }
 
+.project-detail-with-img {
+	display: flex;
+	width: 80%;
+	flex-direction: column;
+	pointer-events: auto;
+	align-items: center;
+	gap: 1rem;
+
+	img {
+		width: 100%;
+		image-rendering: -moz-crisp-edges; /* firefox */
+		image-rendering: -o-crisp-edges; /* opera */
+		image-rendering: -webkit-optimize-contrast; /* chrome(비표준) */
+		image-rendering: crisp-edges;
+		transform: translateZ(0);
+		backface-visibility: hidden;
+		user-select: none;
+	}
+}
+
 @media (max-width: 768px) {
 	.project-detail {
 		padding: 2rem 2rem;

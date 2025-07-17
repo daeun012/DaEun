@@ -5,34 +5,34 @@ import "./Project.scss";
 
 const projects = [
 	{
-		img: "https://daeun012.github.io/DaEun/images/humechanic.jpg",
-		title: "인공지능 기반 광고 심의 서비스",
-		subTitle: "html, css, javascript",
+		src: `${process.env.PUBLIC_URL}/images/karb_cover.png`,
+		title: "인공지능 기반 광고 심의 시스템",
+		date: "2025.03 ~ 2025.06 (3UXUI, 2PM)",
 	},
 	{
-		img: "https://daeun012.github.io/DaEun/images/humechanic.jpg",
+		src: `${process.env.PUBLIC_URL}/images/catchtable_cover.png`,
 		title: "캐치테이블 탐색 경험 개선",
-		subTitle: "html, css, javascript",
+		date: "2024.09 ~ 2024.11 (3UXUI)",
 	},
 	{
-		img: "https://daeun012.github.io/DaEun/images/humechanic.jpg",
+		src: `${process.env.PUBLIC_URL}/images/delivery_cover.png`,
 		title: "배달의 민족 리뷰 시스템 개선",
-		subTitle: "html, css, javascript",
+		date: "2024.05 ~ 2024.07 (3UXUI, 5PM)",
 	},
 	{
-		img: "https://daeun012.github.io/DaEun/images/labelimage.png",
+		src: `${process.env.PUBLIC_URL}/images/labeltool_cover.png`,
 		title: "이미지 라벨링 툴",
-		subTitle: "2021.08 (개인 프로젝트)",
+		date: "2021.08 (개인 프로젝트)",
 	},
 	{
-		img: "https://daeun012.github.io/DaEun/images/funbun.png",
+		src: `${process.env.PUBLIC_URL}/images/funbun_cover.png`,
 		title: "대학생들을 위한 선후배 매칭 및 그룹 채팅 서비스",
-		subTitle: "2021.06 ~ 2021.08 (4인 프로젝트)",
+		date: "2021.06 ~ 2021.08 (4인 팀 프로젝트)",
 	},
 	{
-		img: "https://daeun012.github.io/DaEun/images/humechanic.jpg",
+		src: `${process.env.PUBLIC_URL}/images/humechanic_cover.png`,
 		title: "로봇 동아리 홈페이지",
-		subTitle: "2021.04 ~ 2021.05 (개인 프로젝트)",
+		date: "2021.04 ~ 2021.05 (개인 프로젝트)",
 	},
 ];
 
@@ -42,7 +42,7 @@ export default function Project({ scrollRef }) {
 	const renderProjectItems = (array) => {
 		return array.map((value, index) => (
 			<Link key={index} to={`/project/${index}`} state={{ background: location }} style={{ display: "contents" }}>
-				<Card img={value.img} title={value.title} subTitle={value.subTitle} component={Link} to={"/project"} />
+				<Card imgSrc={value.src} title={value.title} date={value.date} component={Link} to={"/project"} />
 			</Link>
 		));
 	};

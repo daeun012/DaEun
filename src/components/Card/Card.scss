@@ -15,24 +15,24 @@
 
 	img {
 		width: 100%;
-		height: 12rem;
-		object-fit: contain;
+		height: 14rem;
+		object-fit: cover;
 	}
 
 	.info {
-		padding: 1.2rem 1.5rem;
-		text-align: left;
+		padding: 0.8rem 1.5rem 1.2rem;
 		line-height: 1.4;
+		text-align: left;
 
 		.title {
-			font-size: 15px;
-			font-weight: 600;
 			color: $nd100;
+			font-weight: 600;
+			font-size: 15px;
 		}
 
-		.sub-title {
-			font-size: 12px;
+		.date {
 			color: $nd50;
+			font-size: 12px;
 		}
 	}
 }

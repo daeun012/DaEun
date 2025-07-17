@@ -2,15 +2,18 @@ import { useEffect } from "react";
 import { IoClose } from "react-icons/io5";
 
 import { useNavigate, useParams } from "react-router-dom";
+import CatchTable from "../projectDetail/CatchTable";
+import Delivery from "../projectDetail/Delivery";
 import FunBun from "../projectDetail/FunBun";
 import Humechanic from "../projectDetail/Humechanic";
+import Karb from "../projectDetail/Karb";
 import LabelImage from "../projectDetail/LabelImage";
 import "./ProjectModal.scss";
 
 const project = [
-	{ id: 0, element: <FunBun /> },
-	{ id: 1, element: <Humechanic /> },
-	{ id: 2, element: <LabelImage /> },
+	{ id: 0, element: <Karb /> },
+	{ id: 1, element: <CatchTable /> },
+	{ id: 2, element: <Delivery /> },
 	{ id: 3, element: <LabelImage /> },
 	{ id: 4, element: <FunBun /> },
 	{ id: 5, element: <Humechanic /> },
