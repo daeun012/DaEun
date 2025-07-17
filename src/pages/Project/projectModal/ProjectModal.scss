@@ -2,38 +2,50 @@
 
 .project-modal {
 	position: fixed;
-	z-index: 100;
 	top: 0;
 	left: 0;
-	overflow-x: hidden;
-	overflow-y: auto;
 	width: 100%;
 	height: 100%;
-	background-color: $nd90;
 	padding: 0 1.5rem;
+	z-index: 100;
+	overflow-x: hidden;
+	overflow-y: auto;
+	background-color: $nd90;
 
 	.close-button {
+		display: flex;
 		position: fixed;
-		top: 4%;
+		top: 2%;
 		right: 2%;
+		width: 48px;
+		height: 48px;
 		color: white;
+		background-color: $nl20;
+		align-items: center;
+		justify-content: center;
+		border-radius: 32px;
+		transition: all 0.5s;
+
+		&:hover {
+			background-color: $nl40;
+		}
 	}
 
 	.content {
 		display: flex;
+		margin: 4rem auto;
 		align-items: center;
 		justify-content: center;
-		margin: 4rem auto;
 		max-width: 50rem;
 		pointer-events: none;
 
 		.img-container {
 			display: flex;
+			width: 80%;
 			flex-direction: column;
 			pointer-events: auto;
 			align-items: center;
 			gap: 1rem;
-			width: 80%;
 
 			img {
 				width: 100%;
