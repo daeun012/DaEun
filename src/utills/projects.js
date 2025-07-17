@@ -11,6 +11,7 @@ const PROJECTS = [
 		src: `${process.env.PUBLIC_URL}/images/karb_cover.png`,
 		title: "인공지능 기반 광고 심의 시스템",
 		date: "2025.03 ~ 2025.06 (3UXUI, 2PM)",
+		desc: "광고 심의를 담당하는 한국광고자율심의기구 실무자들의 원활한 업무 수행을 지원하는 서비스",
 		detail: <Karb />,
 	},
 	{
@@ -18,12 +19,14 @@ const PROJECTS = [
 		src: `${process.env.PUBLIC_URL}/images/catchtable_cover.png`,
 		title: "캐치테이블 탐색 경험 개선",
 		date: "2024.09 ~ 2024.11 (3UXUI)",
+		desc: "사용자 유입과 재방문율을 높여 미식 플랫폼으로서의 경쟁력 강화를 위한 탐색 경험 개선",
 		detail: <CatchTable />,
 	},
 	{
 		id: 2,
 		src: `${process.env.PUBLIC_URL}/images/delivery_cover.png`,
 		title: "배달의 민족 리뷰 시스템 개선",
+		desc: "고객의 탐색 편의성 향상과 플랫폼의 신뢰도 강화를 위한 리뷰 시스템 개선",
 		date: "2024.05 ~ 2024.07 (3UXUI, 5PM)",
 		detail: <Delivery />,
 	},

@@ -16,7 +16,7 @@
 	img {
 		width: 100%;
 		height: 14rem;
-		object-fit: contain;
+		object-fit: cover;
 	}
 
 	.info {
@@ -34,6 +34,19 @@
 			color: $b100;
 			font-size: 0.8rem;
 		}
+
+		.desc {
+			margin-top: 0.5rem;
+			color: $b200;
+			font-size: 0.9rem;
+			font-weight: 400;
+		}
+	}
+}
+
+@media (max-width: 1020px) {
+	.card {
+		width: calc((100% - 2rem) / 2);
 	}
 }
 

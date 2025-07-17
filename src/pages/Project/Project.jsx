@@ -16,6 +16,7 @@ export default function Project({ scrollRef, onOpenModal, onProjectIdChange }) {
 				imgSrc={value.src}
 				title={value.title}
 				date={value.date}
+				desc={value.desc}
 				onClick={() => handleCardClick(value.id)}
 			/>
 		));
