@@ -1,7 +1,6 @@
 import { useEffect } from "react";
 import { IoClose } from "react-icons/io5";
 
-import { useNavigate, useParams } from "react-router-dom";
 import CatchTable from "../projectDetail/CatchTable";
 import Delivery from "../projectDetail/Delivery";
 import FunBun from "../projectDetail/FunBun";
@@ -19,14 +18,11 @@ const project = [
 	{ id: 5, element: <Humechanic /> },
 ];
 
-export default function ProjectModal() {
-	const navigate = useNavigate();
-	const { id } = useParams();
-
+export default function ProjectModal({ onCloseModal, projectId }) {
 	useEffect(() => {
 		const handleEscape = (e) => {
 			if (e.key === "Escape") {
-				handleModalClose();
+				onCloseModal();
 			}
 		};
 
@@ -38,14 +34,10 @@ export default function ProjectModal() {
 		};
 	}, []);
 
-	const handleModalClose = () => {
-		navigate(-1);
-	};
-
 	return (
-		<div className="project-modal" onClick={handleModalClose}>
+		<div className="project-modal" onClick={onCloseModal}>
 			<div className="content" onClick={(e) => e.stopPropagation()}>
-				{project[id].element}
+				{project[projectId].element}
 			</div>
 			<button className="close-button">
 				<IoClose size="32" />

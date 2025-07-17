@@ -1,22 +1,18 @@
-import { useLocation } from "react-router-dom";
 import Card from "../../components/card/Card";
 import SectionTitle from "../../components/sectionTitle/SectionTitle";
 import "./Career.scss";
 
 export default function Career({ scrollRef }) {
-	const { pathname } = useLocation();
-
 	return (
 		<section className="career" ref={(careerRef) => (scrollRef.current[3] = careerRef)}>
 			<div className="career-container">
 				<SectionTitle title="Career" />
 				<div className="conent">
 					<Card
-						img="https://daeun012.github.io/DaEun/images/sia-logo.svg"
+						imgSrc="https://daeun012.github.io/DaEun/images/sia-logo.svg"
 						title="SIA"
 						subTitle="Frontend Developer"
-						desc="2021.09.27 ~ 2024.02.19"
-						match={`${pathname}/SIAnalytics`}
+						date="2021.09.27 ~ 2024.02.19"
 					/>
 				</div>
 			</div>
