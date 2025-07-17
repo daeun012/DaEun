@@ -1,6 +1,6 @@
 @import "assets/css/variables.scss";
 
-.project-modal {
+.modal {
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -11,6 +11,14 @@
 	overflow-x: hidden;
 	overflow-y: auto;
 	background-color: $nd90;
+
+	.content {
+		display: flex;
+		margin: 4rem auto;
+		align-items: center;
+		justify-content: center;
+		pointer-events: none;
+	}
 
 	.close-button {
 		display: flex;
@@ -29,14 +37,5 @@
 		&:hover {
 			background-color: $nl40;
 		}
-	}
-
-	.content {
-		display: flex;
-		margin: 4rem auto;
-		align-items: center;
-		justify-content: center;
-
-		pointer-events: none;
 	}
 }

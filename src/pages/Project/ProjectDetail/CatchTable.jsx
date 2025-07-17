@@ -2,7 +2,7 @@ export default function CatchTable() {
 	const img = ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14"];
 
 	return (
-		<div className="project-detail-with-img">
+		<div className="detail-container-with-img">
 			{img.map((name, index) => (
 				<img key={index} src={`${process.env.PUBLIC_URL}/images/catch-table/${name}.png`} alt={`${name}`} />
 			))}

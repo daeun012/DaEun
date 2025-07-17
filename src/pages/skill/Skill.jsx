@@ -39,7 +39,7 @@ export default function Skills({ scrollRef }) {
 	};
 
 	return (
-		<section className="skill" ref={(skillRef) => (scrollRef.current[1] = skillRef)}>
+		<section className="skill" ref={(skillRef) => (scrollRef.current[0] = skillRef)}>
 			<div className="skill-container">
 				<SectionTitle title="Skills" />
 

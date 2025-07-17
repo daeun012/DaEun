@@ -1,7 +1,7 @@
 @import "assets/css/variables.scss";
 
 .about {
-	background-color: $nd04;
+	background-color: $nd03;
 }
 
 .about-container {
@@ -9,14 +9,14 @@
 	width: 100%;
 	padding: 8.5rem 1.5rem 4rem;
 	margin: 0 auto;
-	max-width: 71.25rem;
-	gap: 5rem;
+	text-align: center;
+	max-width: 80rem;
+	gap: 2rem;
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
 
 	.title {
-		padding: 0 0 3wpx;
 		color: $b300;
 		font-weight: 900;
 		font-size: 3rem;
@@ -29,25 +29,25 @@
 		}
 
 		p {
-			margin: 0.6em 0 0.6rem;
-			color: $b200;
+			color: $b300;
 			font-weight: 400;
+			font-size: 1.2rem;
 			text-align: center;
 		}
 
 		.personal-info {
 			display: flex;
-			color: $nd40;
+			color: $nd60;
 			font-size: 14px;
+			align-items: center;
+			justify-content: center;
 			gap: 16px;
 			margin-top: 1rem;
+
 			a {
-				color: $nd40;
+				color: $b300;
 				text-decoration: underline;
 				margin-right: 12px;
-				&:visited {
-					color: $nd40;
-				}
 			}
 		}
 	}

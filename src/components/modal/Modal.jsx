@@ -1,16 +1,12 @@
 import { useEffect } from "react";
 import { IoClose } from "react-icons/io5";
+import "./Modal.scss";
 
-import { getProjectById } from "../../../utills/projects";
-import "./ProjectModal.scss";
-
-export default function ProjectModal({ onCloseModal, projectId }) {
-	const project = getProjectById(projectId);
-
+export default function Modal({ onExit, children }) {
 	useEffect(() => {
 		const handleEscape = (e) => {
 			if (e.key === "Escape") {
-				onCloseModal();
+				onExit();
 			}
 		};
 
@@ -23,9 +19,9 @@ export default function ProjectModal({ onCloseModal, projectId }) {
 	}, []);
 
 	return (
-		<div className="project-modal" onClick={onCloseModal}>
+		<div className="modal" onClick={onExit}>
 			<div className="content" onClick={(e) => e.stopPropagation()}>
-				{project.detail}
+				{children}
 			</div>
 			<button className="close-button">
 				<IoClose size="32" />

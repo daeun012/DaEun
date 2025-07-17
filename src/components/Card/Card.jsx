@@ -1,13 +1,8 @@
 import "./Card.scss";
 
-export default function Card({ id, imgSrc, title, date, onOpenModal, onProjectIdChange }) {
-	const handleClick = () => {
-		onProjectIdChange(id);
-		onOpenModal();
-	};
-
+export default function Card({ imgSrc, title, date, onClick }) {
 	return (
-		<div className="card" onClick={handleClick}>
+		<div className="card" onClick={onClick}>
 			<img src={imgSrc} alt={title} />
 			<div className="info">
 				<div className="title">{title}</div>

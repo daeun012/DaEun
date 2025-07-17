@@ -2,7 +2,7 @@ import { FaGithub } from "react-icons/fa";
 
 export default function LabelImage() {
 	return (
-		<div className="project-detail">
+		<div className="detail-container">
 			<div className="title">
 				LabelImage
 				<div className="sub-title">2021.08 (개인 프로젝트)</div>
@@ -14,7 +14,6 @@ export default function LabelImage() {
 			<div className="bar" />
 			<div className="body">
 				<img src="https://daeun012.github.io/DaEun/images/labelGif.gif" alt="이미지 라벨" />
-				<br />
 				<h3>📌 요약</h3>
 				<p>
 					<strong>AI 학습을 위한 데이터셋을 만드는 도구인 이미지 라벨링 툴</strong>

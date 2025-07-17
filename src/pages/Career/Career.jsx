@@ -1,20 +1,31 @@
 import Card from "../../components/card/Card";
 import SectionTitle from "../../components/sectionTitle/SectionTitle";
+import { CAREERS } from "../../utills/careers";
 import "./Career.scss";
 
-export default function Career({ scrollRef }) {
+export default function Career({ scrollRef, onOpenModal, onProjectIdChange }) {
+	const handleCardClick = (id) => {
+		onProjectIdChange(id);
+		onOpenModal();
+	};
+
+	const renderCareerItems = (array) => {
+		return array.map((value, index) => (
+			<Card
+				key={index}
+				imgSrc={value.src}
+				title={value.title}
+				date={value.date}
+				onClick={() => handleCardClick(value.id)}
+			/>
+		));
+	};
+
 	return (
-		<section className="career" ref={(careerRef) => (scrollRef.current[3] = careerRef)}>
+		<section className="career" ref={(careerRef) => (scrollRef.current[2] = careerRef)}>
 			<div className="career-container">
 				<SectionTitle title="Career" />
-				<div className="conent">
-					<Card
-						imgSrc="https://daeun012.github.io/DaEun/images/sia-logo.svg"
-						title="SIA"
-						subTitle="Frontend Developer"
-						date="2021.09.27 ~ 2024.02.19"
-					/>
-				</div>
+				<div className="conent">{renderCareerItems(CAREERS)}</div>
 			</div>
 		</section>
 	);

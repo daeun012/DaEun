@@ -2,7 +2,7 @@ import { FaGithub } from "react-icons/fa";
 
 export default function Humechanic() {
 	return (
-		<div className="project-detail">
+		<div className="detail-container">
 			<div className="title">
 				Humechanic
 				<div className="sub-title">2021.04 ~ 2021.05 (개인 프로젝트)</div>
@@ -13,8 +13,7 @@ export default function Humechanic() {
 			</div>
 			<div className="bar"></div>
 			<div className="body">
-				<img src="https://daeun012.github.io/DaEun/images/humechanic_main.png" alt="Humechanic 메인"></img>
-				<br />
+				<img src={`${process.env.PUBLIC_URL}/images/humechanic_main.png`} alt="Humechanic 메인"></img>
 				<h3>📌 요약</h3>
 				<p>
 					<strong>로봇 동아리 홈페이지</strong>

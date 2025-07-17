@@ -1,76 +1,79 @@
-import "./SIAnalytics.scss";
+import { IoIosLink } from "react-icons/io";
 
 export default function SIAnalytics() {
 	return (
-		<>
+		<div className="detail-container">
 			<div className="title">
-				SI Aanalytics
-				<div className="sub-title">인공지능 기반 위성/항공 영상 분석 서비스</div>
+				SI Aanalytics / Frontend Developer
+				<div className="sub-title">2021.09.27 ~ 2024.02.19</div>
 			</div>
 			<div className="bar" />
 			<div className="body">
+				<h3>📢 회사 소개</h3>
 				<p>
-					지구 관측을 통해 현명한 결정을 하기 위한 가치를 제공하는, <b>인공지능 기반 위성/항공 영상 분석</b> 회사입니다.
+					“지구를 바라보고, 세상을 읽다.” 인공지능 기반의 위성‧항공 영상 분석을 통해, 지구 관측 데이터가 담고 있는
+					의미를 해석하고 사람들이 더 나은 결정을 내릴 수 있도록 돕는 기업입니다.
 				</p>
-				<a href="https://si-analytics.ai/" target="_blank" rel="noreferrer">
-					SIA 홈페이지
+				<a className="ref" href="https://si-analytics.ai/" target="_blank" rel="noreferrer">
+					<IoIosLink size={16} /> SIA 홈페이지
 				</a>
-				<a href="https://recruit.si-analytics.ai/" target="_blank" rel="noreferrer">
-					SIA 소개
-				</a>
-				<h2>Frontend Developer</h2>
+
+				<br />
+				<h3>👩🏻‍💻 Frontend Developer</h3>
 				<p>
-					일상생활에서 접하기 쉽지 않은 도메인인 "인공위성"에 대해 접해볼 수 있는 기회였습니다. GIS 기반 웹 시스템을
-					위한 여러 FE 프로젝트에 참여하여 주로 개발 복잡도와 난이도가 높은 작업을 맡아 수행하였습니다. 이를 통해 지도
-					데이터를 효과적으로 처리하고 지리적 정보 시스템을 개발하는 데 필요한 기술을 익힐 수 있었습니다. 또한
-					인공위성은 대량의 데이터를 수집하고 분석하는 데 사용되기 때문에, 데이터를 시각적으로 표현하고 사용자에게 쉽게
-					이해할 수 있는 형태로 제공하고자 노력하였습니다. 이러한 과정에서 데이터 시각화 및 대시보드 개발 등 기술적인
-					스킬을 배울 수 있었습니다.
+					일상에서 접하기 어려운 "인공위성" 도메인을 경험한 특별한 기회였습니다. GIS 기반 웹 시스템을 위한 다양한
+					프론트엔드 프로젝트에 참여하며, 개발 난이도가 높은 작업을 주로 맡아 수행했습니다. 그 과정에서 지도 데이터를
+					효과적으로 처리하는 방법과 지리정보시스템 구축에 필요한 기술을 익혔습니다. 특히, 인공위성은 대량의 데이터를
+					수집하고 분석하는 특성을 지녔기에, 저는 이러한 데이터를 사용자에게 직관적으로 전달하기 위한 시각화와 대시보드
+					개발에 주력했습니다. 덕분에 복잡한 정보를 명확히 전달하는 데이터 시각화 역량도 함께 키울 수 있었습니다.
 				</p>
-				<div className="stack">
+				<p className="stack">
 					TypeScript, React, Redux, redux-saga, react-router, react-i18n, Sass, Openlayers, Victory, Recharts,
-					Storybook, Ant Design, gRPC{" "}
-				</div>
-				<h3>위성 영상 분석 실시간 모니터링 시스템 개발</h3>
-				<p>
-					<li>React 기반 FE 프로젝트 유지보수 및 기능 개발</li>
-					<li>GIS 오픈소스인 Openlayers 라이브러리 사용</li>
-					<li>Victory 차트 라이브러리를 활용해 위성 영상 타임라인 개발</li>
-					<div className="reference">
-						유사기능 참고:
-						<a href="https://worldview.earthdata.nasa.gov/" target="_blank" rel="noreferrer">
-							Worldview 타임라인
-						</a>
-					</div>
-					<li>지도 편집 툴 개발</li>
-					<li>지도 위 그림판과 같은 기능을 위한 Openlayers Custom Interaction 개발</li>
-					<div className="reference">
-						유사기능 참고:
-						<a href="https://openlayers-editor.geops.com/" target="_blank" rel="noreferrer">
-							Openlayers Editor
-						</a>
-					</div>
-					<li>
-						그 외 불편 사항 접수, 프로젝트 관리, 영상 검수, 실시간 모니터링, 보고서 생성, 환경설정 등 중요 페이지 개발
-					</li>
+					Storybook, Ant Design, gRPC
 				</p>
-				<h3>디자인 시스템 개발</h3>
-				<p>
+				<br />
+				<div className="task">
+					Ovision 디자인 시스템 구축
+					<span className="sub-title">2022.04 ~ 2022.10</span>
+				</div>
+				<ul>
 					<li>초기 개발 환경 구성 및 개발 방향 설정</li>
 					<li>디자인 시스템 정책 논의 및 결정</li>
-					<li>디자인 시스템 ODS 컴포넌트 개발</li>
-					<li>Storybook 문서 배포 및 생산성 증가를 위한 Storybook 템플릿 제작</li>
-					<div className="reference">
-						<a
-							href="https://62342e522fbdd5003a051cbc-wlcuppuqbr.chromatic.com/?path=/story/foundation-colors--page"
-							target="_blank"
-							rel="noreferrer"
-						>
-							ODS 문서 바로가기
+					<li>디자인 시스템 컴포넌트 12종 개발</li>
+					<li>Storybook 도입 및 문서 배포, 생산성 향상을 위한 Storybook 템플릿 제작</li>
+					<a
+						className="ref"
+						href="https://62342e522fbdd5003a051cbc-wlcuppuqbr.chromatic.com/?path=/story/foundation-colors--page"
+						target="_blank"
+						rel="noreferrer"
+					>
+						<IoIosLink size={16} /> ODS 문서 바로가기
+					</a>
+				</ul>
+				<br />
+				<div className="task">
+					위성 영상 분석 실시간 모니터링 시스템 개발 및 유지보수
+					<span className="sub-title">2021.09 ~ 2024.02</span>
+				</div>
+				<ul>
+					<li>React/TypeScript/OpenLayers 기반 웹 GIS 서비스 개발 및 유지보수</li>
+					<li>레거시 코드와 시스템에서 개발환경에 병목이 되는이슈를 수정하여 DX 향상</li>
+					<li>
+						Recharts, VictoryChart 라이브러리를 활용해 데이터 시각화
+						<a className="ref" href="https://worldview.earthdata.nasa.gov/" target="_blank" rel="noreferrer">
+							<IoIosLink size={16} /> 유사기능 참고: Worldview 타임라인
 						</a>
-					</div>
-				</p>
+					</li>
+
+					<li>
+						지도 편집 툴, 영상 타임라인, 통합 검색, 불편 사항 접수, 프로젝트 관리, 영상 검수, 실시간 모니터링, 보고서
+						생성, 환경설정 등 핵심 기능 개발
+						<a className="ref" href="https://openlayers-editor.geops.com/" target="_blank" rel="noreferrer">
+							<IoIosLink size={16} /> 유사기능 참고: Openlayers Editor
+						</a>
+					</li>
+				</ul>
 			</div>
-		</>
+		</div>
 	);
 }

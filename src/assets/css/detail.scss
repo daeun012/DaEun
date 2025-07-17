@@ -1,4 +1,4 @@
-.project-detail {
+.detail-container {
 	width: 100%;
 	padding: 2rem 3rem;
 	margin: 0 auto;
@@ -11,10 +11,10 @@
 		position: relative;
 		color: $b300;
 		font-weight: 700;
-		font-size: 32px;
+		font-size: 1.8rem;
 		margin-bottom: 1rem;
 		.sub-title {
-			color: $b200;
+			color: $b100;
 			font-weight: 400;
 			font-size: 1rem;
 			line-height: 1.8;
@@ -23,18 +23,13 @@
 		a {
 			display: flex;
 			position: absolute;
-			top: 10%;
+			top: 6%;
 			right: 0;
 			color: $b300;
 			font-weight: 700;
-			font-size: 1.25rem;
+			font-size: 1.2rem;
 			align-items: center;
 			gap: 0.5rem;
-
-			&:visited {
-				color: $primary-color;
-				background-color: $nd04;
-			}
 		}
 	}
 
@@ -45,29 +40,26 @@
 	}
 
 	.body {
-		font-size: 18px;
+		font-size: 1.05rem;
 		word-break: keep-all;
 		margin-top: 24px;
 
+		h3 {
+			color: $b300;
+			font-weight: 700;
+			font-size: 1.2rem;
+			margin-bottom: 1rem;
+		}
+
 		p {
-			color: $b200;
+			color: $b300;
 			font-weight: 400;
 			margin-bottom: 1rem;
 		}
 
 		strong {
-			color: $b200;
-			font-weight: 700;
-		}
-
-		h1,
-		h2,
-		h3,
-		h4 {
 			color: $b300;
 			font-weight: 700;
-			font-size: 1.25rem;
-			margin-bottom: 1.25rem;
 		}
 
 		img {
@@ -78,10 +70,47 @@
 			border-radius: 12px;
 			object-fit: contain;
 		}
+
+		ul {
+			list-style-type: disc;
+			padding-left: 1.25rem;
+			margin-bottom: 1rem;
+		}
+
+		.stack {
+			padding: 0.5rem 1rem;
+			color: $b100;
+			background-color: $nd04;
+			border-radius: 0.5rem;
+		}
+
+		.ref {
+			display: flex;
+			align-items: center;
+			gap: 0.2rem;
+			font-size: 15px;
+			font-weight: 400;
+			margin-bottom: 0.5rem;
+			color: $b200;
+		}
+
+		.task {
+			color: $b300;
+			font-weight: 700;
+			font-size: 1.05rem;
+			margin-bottom: 1rem;
+
+			.sub-title {
+				color: $b100;
+				font-weight: 400;
+				font-size: 0.9rem;
+				margin-left: 0.5rem;
+			}
+		}
 	}
 }
 
-.project-detail-with-img {
+.detail-container-with-img {
 	display: flex;
 	width: 80%;
 	flex-direction: column;
