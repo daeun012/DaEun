@@ -31,6 +31,7 @@ export default function App() {
 			<Skills scrollRef={scrollRef} />
 			<Project scrollRef={scrollRef} onOpenModal={handleOpenModal} onProjectIdChange={handleProjectIdChange} />
 			<Career scrollRef={scrollRef} />
+
 			<CSSTransition in={isModalOpen} timeout={500} classNames="fade" unmountOnExit>
 				<ProjectModal onCloseModal={handleCloseModal} projectId={projectId} />
 			</CSSTransition>

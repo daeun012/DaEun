@@ -16,7 +16,7 @@ export default function Header({ scrollRef }) {
 	const navRef = useRef([]);
 
 	useEffect(() => {
-		scrollRef.current[navIndex]?.scrollIntoView({ behavior: "smooth" });
+		scrollRef.current[navIndex]?.scrollIntoView({ behavior: "smooth", block: "center" });
 		setNavIndex(null);
 	}, [scrollRef, navIndex]);
 

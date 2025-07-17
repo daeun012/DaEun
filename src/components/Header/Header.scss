@@ -2,30 +2,30 @@
 
 .header {
 	position: fixed;
-	top: 0px;
-	left: 0px;
-	right: 0px;
+	top: 0;
+	right: 0;
+	left: 0;
 	background-color: $nl90;
 	z-index: 10;
 }
 
 .container {
 	width: 100%;
-	max-width: 71.25rem;
 	height: 4.5rem;
-	margin: 0 auto;
 	padding: 1.25rem 5rem;
+	margin: 0 auto;
+	max-width: 71.25rem;
 	@include flex(center, space-between);
 	.items {
 		@include flex(center, center);
 		.logo {
-			font-family: "Montserrat";
+			padding: 0.5rem;
+			color: $primary-color;
 			font-weight: bold;
 			font-size: 1.2rem;
-			color: $primary-color;
-			@include flex(center, center);
+			font-family: "Montserrat";
 			transition: all 0.3s;
-			padding: 0.5rem;
+			@include flex(center, center);
 			&:hover {
 				background-color: $nd04;
 			}
@@ -38,13 +38,13 @@
 	margin-right: 24px;
 
 	.menu-item {
-		font-family: "Montserrat";
-		font-size: 15px;
+		color: $nd100;
 		font-weight: 700;
+		font-size: 15px;
+		font-family: "Montserrat";
+		text-decoration: none;
 		margin-left: 48px;
 		transition: all 0.3s;
-		text-decoration: none;
-		color: $nd100;
 		&:hover {
 			color: $primary-color;
 		}
@@ -53,22 +53,22 @@
 
 .mobile-menu-wrapper {
 	display: none;
+	padding: 0 2.5rem;
+	font-family: "Montserrat";
 	flex-direction: column;
 	overflow: hidden;
 	max-height: 0;
-	padding: 0 2.5rem;
 	transition: max-height 0.3s ease;
-	font-family: "Montserrat";
 
 	.mobile-menu-item {
-		font-size: 1rem;
-		font-weight: 700;
-		transition: all 0.3s;
-		text-decoration: none;
-		color: $nd100;
 		padding: 1rem 0;
+		color: $nd100;
+		font-weight: 700;
+		font-size: 1rem;
 		line-height: 1.25rem;
+		text-decoration: none;
 		text-align: left;
+		transition: all 0.3s;
 
 		&:last-child {
 			margin-bottom: 1rem;
