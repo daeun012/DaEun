@@ -1,31 +1,41 @@
+import { FaGithub } from "react-icons/fa";
+
 export default function Humechanic() {
 	return (
-		<div className="container-detail">
+		<div className="project-detail">
 			<div className="title">
 				Humechanic
-				<div className="sub-title">로봇동아리 홈페이지</div>
+				<div className="sub-title">2021.04 ~ 2021.05 (개인 프로젝트)</div>
+				<a href="https://github.com/daeun012/Humechanic" target="_blank" rel="noreferrer">
+					<FaGithub size={20} />
+					Github
+				</a>
 			</div>
 			<div className="bar"></div>
 			<div className="body">
-				<img src="https://daeun012.github.io/DaEun/images/humechanic.jpg" alt="Humechanic 로고"></img>
+				<img src="https://daeun012.github.io/DaEun/images/humechanic_main.png" alt="Humechanic 메인"></img>
+				<br />
+				<h3>📌 요약</h3>
 				<p>
-					HTML, CSS, JavaScript 공부를 시작하면서 만든 첫 프로젝트로,{" "}
-					<b>학과 내 동아리 홈페이지를 만들어 보았습니다.</b> 기본적인 홈페이지의 기능들을 구현하였습니다.
+					<strong>로봇 동아리 홈페이지</strong>
 				</p>
-				<a href="https://github.com/daeun012/Humechanic" target="_blank" rel="noreferrer">
-					Github 바로가기
-				</a>
-				<h3>주요기능</h3>
+				<p>
+					<li>로봇 동아리를 소개하기 위해 만든 웹사이트</li>
+					<li>최초 웹 개발 경험 (HTML, CSS, JS, NodeJs, MongoDB)</li>
+					<li>Bootstrap UI 프레임워크 사용</li>
+				</p>
+				<br />
+				<h3>⭐️ 주요기능</h3>
 				<p>
 					<li>로그인 및 회원가입</li>
 					<li>User 접근 제한 및 유효성 확인</li>
 					<li>게시판 작성/수정/삭제</li>
 					<li>게시판 페이지, 댓글 기능</li>
 				</p>
-				<h3>기술 스택</h3>
+				<br />
+				<h3>🔨 기술스택</h3>
 				<p>
-					<li>HTML/CSS</li>
-					<li>JavaScript</li>
+					<li>HTML/CSS/JS</li>
 					<li>Bootstrap</li>
 					<li>MongoDB / Mongoose</li>
 					<li>NodeJS (Express)</li>

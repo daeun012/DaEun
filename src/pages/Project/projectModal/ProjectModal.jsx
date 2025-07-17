@@ -11,9 +11,9 @@ const project = [
 	{ id: 0, element: <FunBun /> },
 	{ id: 1, element: <Humechanic /> },
 	{ id: 2, element: <LabelImage /> },
-	{ id: 3, element: <FunBun /> },
-	{ id: 4, element: <Humechanic /> },
-	{ id: 5, element: <LabelImage /> },
+	{ id: 3, element: <LabelImage /> },
+	{ id: 4, element: <FunBun /> },
+	{ id: 5, element: <Humechanic /> },
 ];
 
 export default function ProjectModal() {

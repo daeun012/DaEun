@@ -19,16 +19,20 @@ const projects = [
 		title: "배달의 민족 리뷰 시스템 개선",
 		subTitle: "html, css, javascript",
 	},
-	{ img: "https://daeun012.github.io/DaEun/images/labelimage.png", title: "이미지 라벨 툴", subTitle: "react" },
+	{
+		img: "https://daeun012.github.io/DaEun/images/labelimage.png",
+		title: "이미지 라벨링 툴",
+		subTitle: "2021.08 (개인 프로젝트)",
+	},
 	{
 		img: "https://daeun012.github.io/DaEun/images/funbun.png",
 		title: "대학생들을 위한 선후배 매칭 및 그룹 채팅 서비스",
-		subTitle: "react, nodejs, mongo DB, material UI, JSON web tokens",
+		subTitle: "2021.06 ~ 2021.08 (4인 프로젝트)",
 	},
 	{
 		img: "https://daeun012.github.io/DaEun/images/humechanic.jpg",
 		title: "로봇 동아리 홈페이지",
-		subTitle: "html, css, javascript",
+		subTitle: "2021.04 ~ 2021.05 (개인 프로젝트)",
 	},
 ];
 
