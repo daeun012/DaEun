@@ -45,11 +45,12 @@ export default function App() {
 	return (
 		<>
 			<Header scrollRef={scrollRef} />
+
 			<About scrollRef={scrollRef} />
 			<Project scrollRef={scrollRef} onOpenModal={handleProjectModalOpen} onProjectIdChange={handleProjectIdChange} />
 			<Career scrollRef={scrollRef} onOpenModal={handleCareerModalOpen} onProjectIdChange={handleCareerIdChange} />
-			<footer>© 2025. All rights reserved.</footer>
 
+			<footer>© 2025. All rights reserved.</footer>
 			<CSSTransition in={isProjectModalOpen} timeout={500} classNames="fade" unmountOnExit>
 				<Modal onExit={handleProjectModalClose}>{project?.detail}</Modal>
 			</CSSTransition>
