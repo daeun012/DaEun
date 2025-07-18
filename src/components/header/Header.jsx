@@ -65,7 +65,15 @@ export default function Header({ scrollRef }) {
 		<header className={cn("header", { hasBackground: scrollPosition > 100 })}>
 			<div className="header-container">
 				<div className="items left-side">
-					<button className="logo">DaEun's Portfolio</button>
+					<button
+						className="logo"
+						ref={(ref) => (navRef.current[0] = ref)}
+						onClick={() => {
+							setNavIndex(0);
+						}}
+					>
+						DaEun's Portfolio
+					</button>
 				</div>
 				<div className="items right-side">
 					<nav className="menu">{renderNavMenu()}</nav>
