@@ -1,6 +1,5 @@
 import { useMemo, useRef, useState } from "react";
 
-import { CSSTransition } from "react-transition-group";
 import { getCareerById } from "utills/careers";
 import { getProjectById } from "utills/projects";
 import Header from "./components/header/Header";
@@ -51,12 +50,13 @@ export default function App() {
 			<Career scrollRef={scrollRef} onOpenModal={handleCareerModalOpen} onProjectIdChange={handleCareerIdChange} />
 
 			<footer>© 2025. All rights reserved.</footer>
-			<CSSTransition in={isProjectModalOpen} timeout={500} classNames="fade" unmountOnExit>
-				<Modal onExit={handleProjectModalClose}>{project?.detail}</Modal>
-			</CSSTransition>
-			<CSSTransition in={isCareerModalOpen} timeout={500} classNames="fade" unmountOnExit>
-				<Modal onExit={handleCareerModalClose}>{career?.detail}</Modal>
-			</CSSTransition>
+
+			<Modal isOpen={isProjectModalOpen} onExit={handleProjectModalClose}>
+				{project?.detail}
+			</Modal>
+			<Modal isOpen={isCareerModalOpen} onExit={handleCareerModalClose}>
+				{career?.detail}
+			</Modal>
 		</>
 	);
 }
