@@ -46,7 +46,6 @@ export default function App() {
 		<>
 			<Header scrollRef={scrollRef} />
 			<About scrollRef={scrollRef} />
-			{/* 	<Skills scrollRef={scrollRef} /> */}
 			<Project scrollRef={scrollRef} onOpenModal={handleProjectModalOpen} onProjectIdChange={handleProjectIdChange} />
 			<Career scrollRef={scrollRef} onOpenModal={handleCareerModalOpen} onProjectIdChange={handleCareerIdChange} />
 
