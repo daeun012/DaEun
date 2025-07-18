@@ -1,6 +1,6 @@
+import AnimateContainer from "../../components/AnimateContainer/AnimateContainer";
+import AnimateItem from "../../components/AnimateItem/AnimateItem";
 import Card from "../../components/card/Card";
-import ScrollAnimate from "../../components/scrollAnimate/ScrollAnimate";
-import ScrollAnimateContainer from "../../components/scrollAnimateContainer/ScrollAnimateContainer";
 import SectionTitle from "../../components/sectionTitle/SectionTitle";
 import { PROJECTS } from "../../utills/projects";
 import "./Project.scss";
@@ -27,14 +27,14 @@ export default function Project({ scrollRef, onOpenModal, onProjectIdChange }) {
 	return (
 		<section className="project" ref={(projectRef) => (scrollRef.current[1] = projectRef)}>
 			<div className="project-container">
-				<ScrollAnimateContainer>
-					<ScrollAnimate>
+				<AnimateContainer>
+					<AnimateItem>
 						<SectionTitle title="PROJECTS" />
-					</ScrollAnimate>
-					<ScrollAnimate>
+					</AnimateItem>
+					<AnimateItem>
 						<div className="content">{renderProjectItems(PROJECTS)}</div>
-					</ScrollAnimate>
-				</ScrollAnimateContainer>
+					</AnimateItem>
+				</AnimateContainer>
 			</div>
 		</section>
 	);

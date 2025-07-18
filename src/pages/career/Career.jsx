@@ -1,6 +1,6 @@
+import AnimateContainer from "../../components/AnimateContainer/AnimateContainer";
+import AnimateItem from "../../components/AnimateItem/AnimateItem";
 import Card from "../../components/card/Card";
-import ScrollAnimate from "../../components/scrollAnimate/ScrollAnimate";
-import ScrollAnimateContainer from "../../components/scrollAnimateContainer/ScrollAnimateContainer";
 import SectionTitle from "../../components/sectionTitle/SectionTitle";
 import { CAREERS } from "../../utills/careers";
 import "./Career.scss";
@@ -26,14 +26,14 @@ export default function Career({ scrollRef, onOpenModal, onProjectIdChange }) {
 	return (
 		<section className="career" ref={(careerRef) => (scrollRef.current[2] = careerRef)}>
 			<div className="career-container">
-				<ScrollAnimateContainer>
-					<ScrollAnimate>
+				<AnimateContainer>
+					<AnimateItem>
 						<SectionTitle title="CAREER" />
-					</ScrollAnimate>
-					<ScrollAnimate>
+					</AnimateItem>
+					<AnimateItem>
 						<div className="conent">{renderCareerItems(CAREERS)}</div>
-					</ScrollAnimate>
-				</ScrollAnimateContainer>
+					</AnimateItem>
+				</AnimateContainer>
 			</div>
 		</section>
 	);

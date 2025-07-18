@@ -1,5 +1,5 @@
-import ScrollAnimate from "../../components/scrollAnimate/ScrollAnimate";
-import ScrollAnimateContainer from "../../components/scrollAnimateContainer/ScrollAnimateContainer";
+import AnimateContainer from "../../components/AnimateContainer/AnimateContainer";
+import AnimateItem from "../../components/AnimateItem/AnimateItem";
 import SectionTitle from "../../components/sectionTitle/SectionTitle";
 import "./About.scss";
 
@@ -39,8 +39,8 @@ export default function About({ scrollRef }) {
 		<section className="about" ref={(careerRef) => (scrollRef.current[0] = careerRef)}>
 			<div className="about-container">
 				<div className="content">
-					<ScrollAnimateContainer>
-						<ScrollAnimate>
+					<AnimateContainer>
+						<AnimateItem>
 							<SectionTitle title="UXUI PORTFOLIO" />
 							<div className="intro">
 								<p>복잡한 요구사항 속에서도 핵심을 놓치지 않는 디자인을 합니다.</p>
@@ -54,8 +54,8 @@ export default function About({ scrollRef }) {
 									Github
 								</a>
 							</div>
-						</ScrollAnimate>
-						<ScrollAnimate>
+						</AnimateItem>
+						<AnimateItem>
 							<div className="box-container">
 								<div className="box-wrapper">
 									<h4>🔖 CAREER</h4>
@@ -94,8 +94,8 @@ export default function About({ scrollRef }) {
 									</div>
 								</div>
 							</div>
-						</ScrollAnimate>
-					</ScrollAnimateContainer>
+						</AnimateItem>
+					</AnimateContainer>
 				</div>
 			</div>
 		</section>

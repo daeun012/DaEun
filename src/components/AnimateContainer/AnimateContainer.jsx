@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-export default function ScrollAnimateContainer({ children }) {
+export default function AnimateContainer({ children }) {
 	const container = {
 		hidden: { opacity: 0, y: 50 },
 		show: {
