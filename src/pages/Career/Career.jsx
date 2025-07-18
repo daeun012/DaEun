@@ -24,7 +24,7 @@ export default function Career({ scrollRef, onOpenModal, onProjectIdChange }) {
 	return (
 		<section className="career" ref={(careerRef) => (scrollRef.current[2] = careerRef)}>
 			<div className="career-container">
-				<SectionTitle title="Career" />
+				<SectionTitle title="CAREER" />
 				<div className="conent">{renderCareerItems(CAREERS)}</div>
 			</div>
 		</section>

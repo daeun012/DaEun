@@ -1,70 +1,133 @@
 @import "assets/css/variables.scss";
 
-.about {
-	background: linear-gradient(
-		180deg,
-		#fff 0%,
-		rgba(246, 248, 254, 0.95) 15.53%,
-		rgba(245, 248, 254, 0.95) 27.83%,
-		rgba(239, 243, 254, 0.91) 43.61%,
-		rgba(221, 231, 253, 0.82) 67.49%,
-		rgba(193, 211, 251, 0.67) 82.77%,
-		rgba(175, 197, 250, 0.57) 93.45%,
-		rgba(159, 186, 249, 0.49) 97.09%,
-		rgba(127, 163, 247, 0.32) 99.46%,
-		rgba(127, 163, 247, 0.2) 100%
-	);
-}
-
 .about-container {
-	display: flex;
 	width: 100%;
 	padding: 9rem 1.5rem 5rem;
 	margin: 0 auto;
-	text-align: center;
 	max-width: 80rem;
+	text-align: center;
 
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
-
-	.title-wrapper {
-		margin: 0 auto 3rem;
-		.title {
-			font-family: "Montserrat";
-			font-size: 40px;
-			font-weight: 800;
-			color: $b300;
-			margin-bottom: 1rem;
-		}
-		.sub-title {
-			font-size: 1.5rem;
-			font-weight: 500;
-			color: $b200;
-		}
+	.title {
+		font-family: "Montserrat";
+		font-size: 2.5rem;
+		font-weight: 800;
 	}
 
 	.content {
 		p {
-			color: $b300;
 			font-weight: 400;
-			font-size: 1.2rem;
-			text-align: center;
+			font-size: 1.1rem;
 		}
 
-		.personal-info {
+		.info {
 			display: flex;
 			color: $b200;
 			font-size: 1rem;
 			align-items: center;
 			justify-content: center;
 			gap: 16px;
-			margin-top: 1rem;
+			margin-bottom: 4rem;
 
 			a {
 				color: $b200;
 				text-decoration: underline;
 				margin-right: 12px;
+			}
+		}
+
+		.box-container {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 2rem;
+
+			.box-wrapper {
+				width: calc((100% - 4rem) / 3);
+				padding: 1.5rem 2rem;
+				border: 1px solid $nd06;
+				border-radius: 1rem;
+				box-shadow: 0px 0px 12px 0px $blue-shadow;
+				text-align: left;
+
+				h4 {
+					color: $b300;
+					font-weight: 800;
+					font-size: 1.1rem;
+					margin-bottom: 1.1rem;
+					font-family: "Montserrat";
+				}
+
+				.about-detail {
+					margin-bottom: 1rem;
+
+					h5 {
+						color: $b300;
+						font-weight: 600;
+						font-size: 1rem;
+					}
+
+					span {
+						color: $b100;
+						font-size: 0.9rem;
+					}
+
+					.summary {
+						margin-top: 0.2rem;
+						list-style-type: disc;
+						padding-left: 1.25rem;
+						font-size: 0.9rem;
+					}
+				}
+
+				.skill-detail {
+					display: flex;
+					flex-direction: column;
+					row-gap: 0.5rem;
+					margin-bottom: 1rem;
+
+					span {
+						color: $b200;
+						font-size: 1rem;
+						font-weight: 500;
+					}
+					.skill-group {
+						display: flex;
+						flex-wrap: wrap;
+						gap: 8px;
+
+						.skill-item {
+							padding: 1px 8px;
+							border: 1px solid;
+							color: $b200;
+							font-weight: 500;
+							font-size: 0.9rem;
+							border-radius: 8px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 1020px) {
+	.about-container {
+		.content {
+			.box-container {
+				.box-wrapper {
+					width: calc((100% - 2rem) / 2);
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.about-container {
+		.content {
+			.box-container {
+				.box-wrapper {
+					width: 100%;
+				}
 			}
 		}
 	}

@@ -8,7 +8,6 @@ import Modal from "./components/modal/Modal";
 import About from "./pages/about/About";
 import Career from "./pages/career/Career";
 import Project from "./pages/project/Project";
-import Skills from "./pages/skill/Skill";
 
 export default function App() {
 	const [isProjectModalOpen, setIsProjectModalOpen] = useState(false);
@@ -47,7 +46,7 @@ export default function App() {
 		<>
 			<Header scrollRef={scrollRef} />
 			<About scrollRef={scrollRef} />
-			<Skills scrollRef={scrollRef} />
+			{/* 	<Skills scrollRef={scrollRef} /> */}
 			<Project scrollRef={scrollRef} onOpenModal={handleProjectModalOpen} onProjectIdChange={handleProjectIdChange} />
 			<Career scrollRef={scrollRef} onOpenModal={handleCareerModalOpen} onProjectIdChange={handleCareerIdChange} />
 

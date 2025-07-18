@@ -25,7 +25,7 @@ export default function Project({ scrollRef, onOpenModal, onProjectIdChange }) {
 	return (
 		<section className="project" ref={(projectRef) => (scrollRef.current[1] = projectRef)}>
 			<div className="project-container">
-				<SectionTitle title="Projects" />
+				<SectionTitle title="PROJECTS" />
 				<div className="content">{renderProjectItems(PROJECTS)}</div>
 			</div>
 		</section>

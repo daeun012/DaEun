@@ -4,7 +4,7 @@ import "./Header.scss";
 import MenuButton from "./menuButton/MenuButton";
 
 const NAV_MENU = [
-	{ idx: 0, name: "Skills" },
+	{ idx: 0, name: "About" },
 	{ idx: 1, name: "Projects" },
 	{ idx: 2, name: "Career" },
 ];
