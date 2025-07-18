@@ -1,13 +1,14 @@
 import { useMemo, useRef, useState } from "react";
+
 import { CSSTransition } from "react-transition-group";
+import { getCareerById } from "utills/careers";
+import { getProjectById } from "utills/projects";
 import Header from "./components/header/Header";
 import Modal from "./components/modal/Modal";
 import About from "./pages/about/About";
 import Career from "./pages/career/Career";
 import Project from "./pages/project/Project";
 import Skills from "./pages/skill/Skill";
-import { getCareerById } from "./utills/careers";
-import { getProjectById } from "./utills/projects";
 
 export default function App() {
 	const [isProjectModalOpen, setIsProjectModalOpen] = useState(false);

@@ -1,0 +1,15 @@
+@import "assets/css/variables.scss";
+
+.career-container {
+	width: 100%;
+	padding: 4rem 1.5rem;
+	margin: 0 auto;
+	text-align: center;
+	max-width: 80rem;
+
+	.content {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 2rem;
+	}
+}

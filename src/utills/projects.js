@@ -1,9 +1,9 @@
-const { default: CatchTable } = require("../pages/project/projectDetail/CatchTable");
-const { default: Delivery } = require("../pages/project/projectDetail/Delivery");
-const { default: FunBun } = require("../pages/project/projectDetail/FunBun");
-const { default: Humechanic } = require("../pages/project/projectDetail/Humechanic");
-const { default: Karb } = require("../pages/project/projectDetail/Karb");
-const { default: LabelImage } = require("../pages/project/projectDetail/LabelImage");
+import CatchTable from "pages/project/projectDetail/CatchTable";
+import Delivery from "pages/project/projectDetail/Delivery";
+import FunBun from "pages/project/projectDetail/FunBun";
+import Humechanic from "pages/project/projectDetail/Humechanic";
+import Karb from "pages/project/projectDetail/Karb";
+import LabelImage from "pages/project/projectDetail/LabelImage";
 
 const PROJECTS = [
 	{

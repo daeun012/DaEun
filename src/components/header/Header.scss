@@ -1,0 +1,112 @@
+@import "assets/css/variables.scss";
+
+.header {
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 10;
+	transition: all 0.5s;
+
+	&.hasBackground {
+		background-color: $nl90;
+		box-shadow: 0px 1px 1px $blue-shadow;
+		backdrop-filter: blur(10px);
+	}
+}
+
+.header-container {
+	width: 100%;
+	height: 4.5rem;
+	padding: 1.25rem 5rem;
+	margin: 0 auto;
+	max-width: 71.25rem;
+	@include flex(center, space-between);
+	.items {
+		@include flex(center, center);
+		.logo {
+			padding: 0.5rem;
+			color: $primary-color;
+			font-weight: bold;
+			font-size: 1.2rem;
+			font-family: "Montserrat";
+			transition: all 0.3s;
+			@include flex(center, center);
+			&:hover {
+				background-color: $nd04;
+			}
+		}
+
+		.menu {
+			@include flex(center, flex-start);
+			margin-right: 24px;
+
+			.menu-item {
+				color: $nd100;
+				font-weight: 700;
+				font-size: 15px;
+				font-family: "Montserrat";
+				text-decoration: none;
+				margin-left: 48px;
+				transition: all 0.3s;
+				&:hover {
+					color: $primary-color;
+				}
+			}
+		}
+	}
+}
+
+.mobile-menu-wrapper {
+	display: none;
+	padding: 0 2.5rem;
+	font-family: "Montserrat";
+	flex-direction: column;
+	overflow: hidden;
+	max-height: 0;
+	transition: max-height 0.3s ease;
+
+	.mobile-menu-item {
+		padding: 1rem 0;
+		color: $nd100;
+		font-weight: 700;
+		font-size: 1rem;
+		line-height: 1.25rem;
+		text-decoration: none;
+		text-align: left;
+		transition: all 0.3s;
+
+		&:last-child {
+			margin-bottom: 1rem;
+		}
+
+		&:hover {
+			color: $primary-color;
+		}
+	}
+
+	&.isOpen {
+		max-height: 15.75rem;
+	}
+}
+
+@media (max-width: 768px) {
+	.header {
+		background-color: $nl90;
+		box-shadow: 0px 1px 1px $blue-shadow;
+		backdrop-filter: blur(10px);
+	}
+
+	.header-container {
+		padding: 0 1.5rem;
+		.items {
+			.menu {
+				display: none;
+			}
+		}
+	}
+
+	.mobile-menu-wrapper {
+		display: flex;
+	}
+}
