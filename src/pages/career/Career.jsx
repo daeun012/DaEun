@@ -25,16 +25,12 @@ export default function Career({ scrollRef, onOpenModal, onProjectIdChange }) {
 
 	return (
 		<section className="career" ref={(careerRef) => (scrollRef.current[2] = careerRef)}>
-			<div className="career-container">
-				<AnimateContainer>
-					<AnimateItem>
-						<SectionTitle title="CAREER" />
-					</AnimateItem>
-					<AnimateItem>
-						<div className="conent">{renderCareerItems(CAREERS)}</div>
-					</AnimateItem>
-				</AnimateContainer>
-			</div>
+			<AnimateContainer className="career-container">
+				<AnimateItem>
+					<SectionTitle title="CAREER" />
+				</AnimateItem>
+				<AnimateItem className="content">{renderCareerItems(CAREERS)}</AnimateItem>
+			</AnimateContainer>
 		</section>
 	);
 }

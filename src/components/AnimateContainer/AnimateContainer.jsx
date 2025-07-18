@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-export default function AnimateContainer({ children }) {
+export default function AnimateContainer({ children, ...props }) {
 	const container = {
 		hidden: { opacity: 0, y: 50 },
 		show: {
@@ -16,7 +16,7 @@ export default function AnimateContainer({ children }) {
 	};
 
 	return (
-		<motion.div variants={container} initial="hidden" whileInView="show" viewport={{ once: true }}>
+		<motion.div variants={container} initial="hidden" whileInView="show" viewport={{ once: true }} {...props}>
 			{children}
 		</motion.div>
 	);

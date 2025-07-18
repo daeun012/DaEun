@@ -31,9 +31,7 @@ export default function Project({ scrollRef, onOpenModal, onProjectIdChange }) {
 					<AnimateItem>
 						<SectionTitle title="PROJECTS" />
 					</AnimateItem>
-					<AnimateItem>
-						<div className="content">{renderProjectItems(PROJECTS)}</div>
-					</AnimateItem>
+					<AnimateItem className="content">{renderProjectItems(PROJECTS)}</AnimateItem>
 				</AnimateContainer>
 			</div>
 		</section>
