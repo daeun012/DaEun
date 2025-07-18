@@ -43,7 +43,7 @@ export default function About({ scrollRef }) {
 					<div className="intro">
 						<p>복잡한 요구사항 속에서도 핵심을 놓치지 않는 디자인을 합니다.</p>
 						<p>수많은 선택지 앞에서도 본질을 꿰뚫어 필요한 것에 집중하고,</p>
-						<p>나머지를 과감히 포기하는 용기를 통해 최적의 해결책을 제시합니다.</p>
+						<p>불필요한 것을 과감히 덜어내는 용기로 최적의 해결책을 제시합니다.</p>
 					</div>
 					<div className="info">
 						<div>rla971203@gmail.com</div>
@@ -69,8 +69,8 @@ export default function About({ scrollRef }) {
 					<div className="box-wrapper">
 						<h4>👩🏻‍🎓 EXPERIENCE & CERTIFICATE</h4>
 						<div className="about-detail">
-							<h5>UXUI디자인 부트캠프 3기</h5>
-							<span>2024.03 ~ 2024.09</span>
+							<h5>UXUI디자인 부트캠프 2기</h5>
+							<span>2024.03 ~ 2024.10</span>
 						</div>
 						<div className="about-detail">
 							<h5>정보처리기사</h5>
