@@ -59,18 +59,20 @@ export default function SIAnalytics() {
 					<li>React/TypeScript/OpenLayers 기반 웹 GIS 서비스 개발 및 유지보수</li>
 					<li>레거시 코드와 시스템에서 개발환경에 병목이 되는이슈를 수정하여 DX 향상</li>
 					<li>
+						지도 데이터 라벨링을 위한 Openlayers Custom Interaction 개발
+						<a className="ref" href="https://openlayers-editor.geops.com/" target="_blank" rel="noreferrer">
+							<IoIosLink size={16} /> 유사기능 참고: Openlayers Editor
+						</a>
+					</li>
+					<li>
 						Recharts, VictoryChart 라이브러리를 활용해 데이터 시각화
 						<a className="ref" href="https://worldview.earthdata.nasa.gov/" target="_blank" rel="noreferrer">
 							<IoIosLink size={16} /> 유사기능 참고: Worldview 타임라인
 						</a>
 					</li>
-
 					<li>
 						지도 편집 툴, 영상 타임라인, 통합 검색, 불편 사항 접수, 프로젝트 관리, 영상 검수, 실시간 모니터링, 보고서
 						생성, 환경설정 등 핵심 기능 개발
-						<a className="ref" href="https://openlayers-editor.geops.com/" target="_blank" rel="noreferrer">
-							<IoIosLink size={16} /> 유사기능 참고: Openlayers Editor
-						</a>
 					</li>
 				</ul>
 			</div>

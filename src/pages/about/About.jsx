@@ -62,7 +62,7 @@ export default function About({ scrollRef }) {
 							<ul className="summary">
 								<li>디자인 시스템 구축</li>
 								<li>위성 데이터를 활용한 AI 기반 위성/항공 영상 분석 서비스 개발</li>
-								<li>요구사항에 맞는 사용성 개선과 기능으리 플로우 제안 및 기술 검증</li>
+								<li>요구사항에 맞는 사용성 개선과 기능의 플로우 제안 및 기술 검증</li>
 							</ul>
 						</div>
 					</div>
