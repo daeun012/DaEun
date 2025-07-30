@@ -18,7 +18,7 @@ const PROJECTS = [
 		id: 1,
 		src: `${process.env.PUBLIC_URL}/images/catchtable_cover.png`,
 		title: "캐치테이블 탐색 경험 개선",
-		date: "2024.09 ~ 2024.11 (3UXUI)",
+		date: "2024.08 ~ 2024.10 (3UXUI)",
 		desc: "사용자 유입과 재방문율을 높여 미식 플랫폼으로서의 경쟁력 강화를 위한 탐색 경험 개선",
 		detail: <CatchTable />,
 	},
