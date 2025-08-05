@@ -39,7 +39,7 @@ export default function About({ scrollRef }) {
 		<section className="about" ref={(careerRef) => (scrollRef.current[0] = careerRef)}>
 			<AnimateContainer className="about-container">
 				<AnimateItem className="content">
-					<SectionTitle title="UXUI PORTFOLIO" />
+					<SectionTitle title="ABOUT ME" />
 					<div className="intro">
 						<p>복잡한 요구사항 속에서도 핵심을 놓치지 않는 디자인을 합니다.</p>
 						<p>수많은 선택지 앞에서도 본질을 꿰뚫어 필요한 것에 집중하고,</p>
