@@ -21,19 +21,19 @@ export default function LabelImage() {
 				<p>이미지를 로드하고, 이미지 위에 박스 라벨을 생성하는 웹 클라이언트 입니다.</p>
 				<br />
 				<h3>⭐️ 주요기능</h3>
-				<p>
+				<ul>
 					<li>라벨 생성</li>
 					<li>라벨 선택</li>
 					<li>라벨 이동</li>
 					<li>라벨 삭제 : 라벨 선택 상에서 Backspace 또는 Delete 키 눌러 라벨 삭제</li>
 					<li>라벨 크기 조절</li>
 					<li>라벨 두번 클릭 시 선택 취소</li>
-				</p>
+				</ul>
 				<br />
 				<h3>🔨 기술스택</h3>
-				<p>
+				<ul>
 					<li>React JS</li>
-				</p>
+				</ul>
 			</div>
 		</div>
 	);
